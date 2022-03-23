@@ -1,7 +1,6 @@
-﻿
-namespace Gym_management
+﻿namespace Gym_management
 {
-    partial class Nhan_vien
+    partial class Thiet_bi
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +28,10 @@ namespace Gym_management
         /// </summary>
         private void InitializeComponent()
         {
-            this.SuspendLayout();
-            // 
-            // Nhan_vien
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.components = new System.ComponentModel.Container();
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.ClientSize = new System.Drawing.Size(1067, 554);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "Nhan_vien";
-            this.Text = "Nhan_vien";
-            this.ResumeLayout(false);
-
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Thiet_bi";
         }
 
         #endregion
