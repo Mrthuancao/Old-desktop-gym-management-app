@@ -32,6 +32,7 @@ namespace Gym_management
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmTableManager));
             this.panelTaskbar = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnFacilities = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.btnReg = new System.Windows.Forms.Button();
@@ -45,7 +46,6 @@ namespace Gym_management
             this.exitbtn = new System.Windows.Forms.PictureBox();
             this.panelBody = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnFacilities = new System.Windows.Forms.Button();
             this.panelTaskbar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
@@ -64,9 +64,8 @@ namespace Gym_management
             this.panelTaskbar.Controls.Add(this.Logo);
             this.panelTaskbar.Dock = System.Windows.Forms.DockStyle.Left;
             this.panelTaskbar.Location = new System.Drawing.Point(0, 0);
-            this.panelTaskbar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panelTaskbar.Name = "panelTaskbar";
-            this.panelTaskbar.Size = new System.Drawing.Size(239, 658);
+            this.panelTaskbar.Size = new System.Drawing.Size(180, 535);
             this.panelTaskbar.TabIndex = 0;
             // 
             // panel1
@@ -79,11 +78,24 @@ namespace Gym_management
             this.panel1.Controls.Add(this.btnPacket);
             this.panel1.Controls.Add(this.btnStaff);
             this.panel1.Controls.Add(this.btnCustomer);
-            this.panel1.Location = new System.Drawing.Point(4, 142);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Location = new System.Drawing.Point(3, 115);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(227, 469);
+            this.panel1.Size = new System.Drawing.Size(170, 381);
             this.panel1.TabIndex = 1;
+            // 
+            // btnFacilities
+            // 
+            this.btnFacilities.BackColor = System.Drawing.Color.White;
+            this.btnFacilities.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnFacilities.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFacilities.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnFacilities.Location = new System.Drawing.Point(3, 112);
+            this.btnFacilities.Name = "btnFacilities";
+            this.btnFacilities.Size = new System.Drawing.Size(160, 40);
+            this.btnFacilities.TabIndex = 4;
+            this.btnFacilities.Text = "Thiết bị";
+            this.btnFacilities.UseVisualStyleBackColor = false;
+            this.btnFacilities.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnExit
             // 
@@ -91,10 +103,9 @@ namespace Gym_management
             this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnExit.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnExit.Location = new System.Drawing.Point(4, 321);
-            this.btnExit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnExit.Location = new System.Drawing.Point(3, 261);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(213, 49);
+            this.btnExit.Size = new System.Drawing.Size(160, 40);
             this.btnExit.TabIndex = 8;
             this.btnExit.Text = "Đăng xuất";
             this.btnExit.UseVisualStyleBackColor = false;
@@ -106,10 +117,9 @@ namespace Gym_management
             this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
             this.button3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(4, 230);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button3.Location = new System.Drawing.Point(3, 187);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(213, 49);
+            this.button3.Size = new System.Drawing.Size(160, 40);
             this.button3.TabIndex = 6;
             this.button3.Text = "Thông tin";
             this.button3.UseVisualStyleBackColor = false;
@@ -121,10 +131,9 @@ namespace Gym_management
             this.btnReg.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnReg.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnReg.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnReg.Location = new System.Drawing.Point(4, 275);
-            this.btnReg.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnReg.Location = new System.Drawing.Point(3, 223);
             this.btnReg.Name = "btnReg";
-            this.btnReg.Size = new System.Drawing.Size(213, 49);
+            this.btnReg.Size = new System.Drawing.Size(160, 40);
             this.btnReg.TabIndex = 7;
             this.btnReg.Text = "Cấp tài khoản";
             this.btnReg.UseVisualStyleBackColor = false;
@@ -136,10 +145,9 @@ namespace Gym_management
             this.btnIncome.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnIncome.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnIncome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnIncome.Location = new System.Drawing.Point(4, 184);
-            this.btnIncome.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnIncome.Location = new System.Drawing.Point(3, 150);
             this.btnIncome.Name = "btnIncome";
-            this.btnIncome.Size = new System.Drawing.Size(213, 49);
+            this.btnIncome.Size = new System.Drawing.Size(160, 40);
             this.btnIncome.TabIndex = 5;
             this.btnIncome.Text = "Doanh thu";
             this.btnIncome.UseVisualStyleBackColor = false;
@@ -151,10 +159,9 @@ namespace Gym_management
             this.btnPacket.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnPacket.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPacket.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnPacket.Location = new System.Drawing.Point(4, 95);
-            this.btnPacket.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnPacket.Location = new System.Drawing.Point(3, 77);
             this.btnPacket.Name = "btnPacket";
-            this.btnPacket.Size = new System.Drawing.Size(213, 49);
+            this.btnPacket.Size = new System.Drawing.Size(160, 40);
             this.btnPacket.TabIndex = 3;
             this.btnPacket.Text = "Gói tập";
             this.btnPacket.UseVisualStyleBackColor = false;
@@ -166,10 +173,9 @@ namespace Gym_management
             this.btnStaff.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnStaff.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnStaff.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnStaff.Location = new System.Drawing.Point(4, 49);
-            this.btnStaff.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnStaff.Location = new System.Drawing.Point(3, 40);
             this.btnStaff.Name = "btnStaff";
-            this.btnStaff.Size = new System.Drawing.Size(213, 49);
+            this.btnStaff.Size = new System.Drawing.Size(160, 40);
             this.btnStaff.TabIndex = 2;
             this.btnStaff.Text = "Nhân viên";
             this.btnStaff.UseVisualStyleBackColor = false;
@@ -181,10 +187,9 @@ namespace Gym_management
             this.btnCustomer.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnCustomer.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCustomer.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnCustomer.Location = new System.Drawing.Point(4, 4);
-            this.btnCustomer.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnCustomer.Location = new System.Drawing.Point(3, 3);
             this.btnCustomer.Name = "btnCustomer";
-            this.btnCustomer.Size = new System.Drawing.Size(213, 49);
+            this.btnCustomer.Size = new System.Drawing.Size(160, 40);
             this.btnCustomer.TabIndex = 1;
             this.btnCustomer.Text = "Khách hàng";
             this.btnCustomer.UseVisualStyleBackColor = false;
@@ -194,10 +199,9 @@ namespace Gym_management
             // 
             this.Logo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Logo.Image = global::Gym_management.Properties.Resources.Fitness_Gym_Dumbbell_Abstract_Logo_Design_Icon_Vector3;
-            this.Logo.Location = new System.Drawing.Point(36, 23);
-            this.Logo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Logo.Location = new System.Drawing.Point(27, 19);
             this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(152, 86);
+            this.Logo.Size = new System.Drawing.Size(114, 70);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Logo.TabIndex = 0;
             this.Logo.TabStop = false;
@@ -206,13 +210,13 @@ namespace Gym_management
             // panelControl
             // 
             this.panelControl.BackColor = System.Drawing.Color.DimGray;
+            this.panelControl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panelControl.Controls.Add(this.minibtn);
             this.panelControl.Controls.Add(this.exitbtn);
             this.panelControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelControl.Location = new System.Drawing.Point(239, 0);
-            this.panelControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelControl.Location = new System.Drawing.Point(180, 0);
             this.panelControl.Name = "panelControl";
-            this.panelControl.Size = new System.Drawing.Size(1448, 33);
+            this.panelControl.Size = new System.Drawing.Size(920, 27);
             this.panelControl.TabIndex = 1;
             // 
             // minibtn
@@ -220,10 +224,9 @@ namespace Gym_management
             this.minibtn.BackColor = System.Drawing.Color.White;
             this.minibtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.minibtn.Image = global::Gym_management.Properties.Resources.minimizebtn;
-            this.minibtn.Location = new System.Drawing.Point(1380, 1);
-            this.minibtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.minibtn.Location = new System.Drawing.Point(867, -2);
             this.minibtn.Name = "minibtn";
-            this.minibtn.Size = new System.Drawing.Size(33, 31);
+            this.minibtn.Size = new System.Drawing.Size(26, 26);
             this.minibtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.minibtn.TabIndex = 2;
             this.minibtn.TabStop = false;
@@ -233,10 +236,9 @@ namespace Gym_management
             // 
             this.exitbtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.exitbtn.Image = global::Gym_management.Properties.Resources.exitbtn;
-            this.exitbtn.Location = new System.Drawing.Point(1411, 0);
-            this.exitbtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.exitbtn.Location = new System.Drawing.Point(890, -2);
             this.exitbtn.Name = "exitbtn";
-            this.exitbtn.Size = new System.Drawing.Size(40, 33);
+            this.exitbtn.Size = new System.Drawing.Size(28, 27);
             this.exitbtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.exitbtn.TabIndex = 0;
             this.exitbtn.TabStop = false;
@@ -245,44 +247,27 @@ namespace Gym_management
             // panelBody
             // 
             this.panelBody.Controls.Add(this.pictureBox1);
-            this.panelBody.Location = new System.Drawing.Point(243, 33);
-            this.panelBody.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panelBody.Location = new System.Drawing.Point(182, 27);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(1441, 622);
+            this.panelBody.Size = new System.Drawing.Size(918, 505);
             this.panelBody.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Gym_management.Properties.Resources.welcome1;
-            this.pictureBox1.Location = new System.Drawing.Point(267, 149);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(115, 130);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(925, 287);
+            this.pictureBox1.Size = new System.Drawing.Size(694, 233);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // btnFacilities
-            // 
-            this.btnFacilities.BackColor = System.Drawing.Color.White;
-            this.btnFacilities.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnFacilities.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFacilities.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnFacilities.Location = new System.Drawing.Point(4, 138);
-            this.btnFacilities.Margin = new System.Windows.Forms.Padding(4);
-            this.btnFacilities.Name = "btnFacilities";
-            this.btnFacilities.Size = new System.Drawing.Size(213, 49);
-            this.btnFacilities.TabIndex = 4;
-            this.btnFacilities.Text = "Thiết bị";
-            this.btnFacilities.UseVisualStyleBackColor = false;
-            this.btnFacilities.Click += new System.EventHandler(this.button1_Click);
-            // 
             // fmTableManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.ClientSize = new System.Drawing.Size(1687, 658);
+            this.ClientSize = new System.Drawing.Size(1100, 535);
             this.Controls.Add(this.panelBody);
             this.Controls.Add(this.panelControl);
             this.Controls.Add(this.panelTaskbar);
@@ -291,7 +276,6 @@ namespace Gym_management
             this.HelpButton = true;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "fmTableManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gym Management App";
