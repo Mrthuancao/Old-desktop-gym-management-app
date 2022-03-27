@@ -16,5 +16,25 @@ namespace Gym_management
         {
             InitializeComponent();
         }
+
+        private void Thiet_bi_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblMem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

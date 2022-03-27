@@ -143,6 +143,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Thiet_bi.resx">
+      <DependentUpon>Thiet_bi.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Thong_tin.resx">
       <DependentUpon>Thong_tin.cs</DependentUpon>
     </EmbeddedResource>
