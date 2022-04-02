@@ -69,6 +69,7 @@
             this.btnInsert2 = new System.Windows.Forms.Button();
             this.btnDelete2 = new System.Windows.Forms.Button();
             this.btnModify2 = new System.Windows.Forms.Button();
+            this.btnView2 = new System.Windows.Forms.Button();
             this.panel4.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -459,6 +460,7 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.Controls.Add(this.btnView2);
             this.tabPage2.Controls.Add(this.btnModify2);
             this.tabPage2.Controls.Add(this.btnDelete2);
             this.tabPage2.Controls.Add(this.btnInsert2);
@@ -579,6 +581,18 @@
             this.btnModify2.Text = "Sửa";
             this.btnModify2.UseVisualStyleBackColor = true;
             // 
+            // btnView2
+            // 
+            this.btnView2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnView2.ForeColor = System.Drawing.Color.DimGray;
+            this.btnView2.Location = new System.Drawing.Point(404, 7);
+            this.btnView2.Margin = new System.Windows.Forms.Padding(4);
+            this.btnView2.Name = "btnView2";
+            this.btnView2.Size = new System.Drawing.Size(124, 53);
+            this.btnView2.TabIndex = 11;
+            this.btnView2.Text = "Xem";
+            this.btnView2.UseVisualStyleBackColor = true;
+            // 
             // Thiet_bi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -659,5 +673,6 @@
         private System.Windows.Forms.Button btnInsert2;
         private System.Windows.Forms.Button btnModify2;
         private System.Windows.Forms.Button btnDelete2;
+        private System.Windows.Forms.Button btnView2;
     }
 }
