@@ -76,5 +76,10 @@ namespace Gym_management
         {
 
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

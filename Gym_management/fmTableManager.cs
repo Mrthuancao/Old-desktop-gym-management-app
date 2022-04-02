@@ -96,7 +96,7 @@ namespace Gym_management
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenChildform(new Thiet_bi());
+            OpenChildform(new Thiet_bic());
         }
     }
 }
