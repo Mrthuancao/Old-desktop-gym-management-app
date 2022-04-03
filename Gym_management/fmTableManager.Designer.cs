@@ -29,6 +29,7 @@ namespace Gym_management
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmTableManager));
             this.panelTaskbar = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -45,7 +46,10 @@ namespace Gym_management
             this.minibtn = new System.Windows.Forms.PictureBox();
             this.exitbtn = new System.Windows.Forms.PictureBox();
             this.panelBody = new System.Windows.Forms.Panel();
+            this.slogan = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelTaskbar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
@@ -246,11 +250,33 @@ namespace Gym_management
             // 
             // panelBody
             // 
+            this.panelBody.Controls.Add(this.slogan);
+            this.panelBody.Controls.Add(this.label1);
             this.panelBody.Controls.Add(this.pictureBox1);
-            this.panelBody.Location = new System.Drawing.Point(182, 27);
+            this.panelBody.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelBody.Location = new System.Drawing.Point(180, 27);
             this.panelBody.Name = "panelBody";
-            this.panelBody.Size = new System.Drawing.Size(918, 505);
+            this.panelBody.Size = new System.Drawing.Size(920, 508);
             this.panelBody.TabIndex = 0;
+            // 
+            // slogan
+            // 
+            this.slogan.AutoSize = true;
+            this.slogan.Font = new System.Drawing.Font("Monotype Corsiva", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.slogan.ForeColor = System.Drawing.Color.Red;
+            this.slogan.Location = new System.Drawing.Point(684, 284);
+            this.slogan.Name = "slogan";
+            this.slogan.Size = new System.Drawing.Size(226, 33);
+            this.slogan.TabIndex = 2;
+            this.slogan.Text = "Stay fit and healthy";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(282, 75);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 13);
+            this.label1.TabIndex = 1;
             // 
             // pictureBox1
             // 
@@ -261,6 +287,12 @@ namespace Gym_management
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // fmTableManager
             // 
@@ -279,6 +311,7 @@ namespace Gym_management
             this.Name = "fmTableManager";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Gym Management App";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.fmTableManager_FormClosing);
             this.panelTaskbar.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
@@ -286,6 +319,7 @@ namespace Gym_management
             ((System.ComponentModel.ISupportInitialize)(this.minibtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitbtn)).EndInit();
             this.panelBody.ResumeLayout(false);
+            this.panelBody.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -309,5 +343,8 @@ namespace Gym_management
         private System.Windows.Forms.Panel panelBody;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btnFacilities;
+        private System.Windows.Forms.Label slogan;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

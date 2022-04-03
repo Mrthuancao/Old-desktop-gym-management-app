@@ -82,7 +82,7 @@ namespace Gym_management
 
         private void btnExit_Click(object sender, EventArgs e)
         {
-            OpenChildform(new Dang_xuat());
+            this.Close();
 
         }
 
@@ -97,6 +97,27 @@ namespace Gym_management
         private void button1_Click(object sender, EventArgs e)
         {
             OpenChildform(new Thiet_bi());
+        }
+
+        private void fmTableManager_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("You want to log out?", "Notification", MessageBoxButtons.OKCancel) != System.Windows.Forms.DialogResult.OK)
+            {
+                e.Cancel = true;
+            }
+        }
+        int x;
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            x = slogan.Location.X;
+            x--;
+            slogan.Location=new Point(x, slogan.Location.Y);
+            if (x<-233)
+            {
+                fmTableManager tb=new fmTableManager();
+                x = tb.Size.Width;
+                slogan.Location= new Point(tb.Size.Width, slogan.Location.Y);
+            }
         }
     }
 }
