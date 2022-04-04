@@ -142,6 +142,7 @@ namespace Gym_management
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 3;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label2
             // 
@@ -189,6 +190,7 @@ namespace Gym_management
             this.Controls.Add(this.dataGridView1);
             this.Name = "Doanh_thu";
             this.Text = "Doanh_thu";
+            this.Load += new System.EventHandler(this.Doanh_thu_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
