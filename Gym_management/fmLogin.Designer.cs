@@ -182,7 +182,7 @@ namespace Gym_management
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Gym_management.Properties.Resources.profile_user;
-            this.pictureBox1.Location = new System.Drawing.Point(111, 33);
+            this.pictureBox1.Location = new System.Drawing.Point(105, 28);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(64, 64);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -209,7 +209,7 @@ namespace Gym_management
             this.panel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel2.Location = new System.Drawing.Point(-60, 52);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(422, 294);
+            this.panel2.Size = new System.Drawing.Size(422, 286);
             this.panel2.TabIndex = 1;
             // 
             // imageList1
