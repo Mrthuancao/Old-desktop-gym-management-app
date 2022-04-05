@@ -24,9 +24,12 @@ namespace Gym_management
 
         private void Doanh_thu_Load(object sender, EventArgs e)
         {
-            comboBox1.Items.Add(" Thong ke theo ngay");
-            comboBox1.Items.Add(" Thong ke theo thang");
-            comboBox1.Items.Add(" Thong ke theo dich vu");
+           
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
