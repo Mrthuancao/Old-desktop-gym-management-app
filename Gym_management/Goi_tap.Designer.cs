@@ -291,7 +291,7 @@ namespace Gym_management
             // txtMemCode
             // 
             this.txtMemCode.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMemCode.Location = new System.Drawing.Point(271, 9);
+            this.txtMemCode.Location = new System.Drawing.Point(284, 10);
             this.txtMemCode.Name = "txtMemCode";
             this.txtMemCode.Size = new System.Drawing.Size(110, 27);
             this.txtMemCode.TabIndex = 6;
@@ -311,9 +311,9 @@ namespace Gym_management
             // txtSearch
             // 
             this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(70, 9);
+            this.txtSearch.Location = new System.Drawing.Point(84, 11);
             this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(134, 27);
+            this.txtSearch.Size = new System.Drawing.Size(120, 27);
             this.txtSearch.TabIndex = 5;
             // 
             // btnSearch
@@ -329,6 +329,7 @@ namespace Gym_management
             // 
             // button2
             // 
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(296, 3);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 40);
@@ -338,6 +339,7 @@ namespace Gym_management
             // 
             // button3
             // 
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button3.Location = new System.Drawing.Point(198, 3);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(92, 40);
@@ -347,6 +349,7 @@ namespace Gym_management
             // 
             // button4
             // 
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(101, 3);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(91, 40);
@@ -356,6 +359,7 @@ namespace Gym_management
             // 
             // button1
             // 
+            this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(3, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 40);
