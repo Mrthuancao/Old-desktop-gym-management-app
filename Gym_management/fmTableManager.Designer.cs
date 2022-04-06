@@ -33,6 +33,10 @@ namespace Gym_management
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fmTableManager));
             this.panelTaskbar = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.btnExit = new System.Windows.Forms.Button();
+            this.btnReg = new System.Windows.Forms.Button();
+            this.btnIncome = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.btnFacilities = new System.Windows.Forms.Button();
             this.btnPacket = new System.Windows.Forms.Button();
             this.btnStaff = new System.Windows.Forms.Button();
@@ -47,10 +51,6 @@ namespace Gym_management
             this.minibtn = new System.Windows.Forms.PictureBox();
             this.pb_phongto = new System.Windows.Forms.PictureBox();
             this.panelControl = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
-            this.btnIncome = new System.Windows.Forms.Button();
-            this.btnReg = new System.Windows.Forms.Button();
-            this.btnExit = new System.Windows.Forms.Button();
             this.panelTaskbar.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
@@ -90,6 +90,74 @@ namespace Gym_management
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(176, 445);
             this.panel1.TabIndex = 1;
+            // 
+            // btnExit
+            // 
+            this.btnExit.BackColor = System.Drawing.Color.Silver;
+            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnExit.FlatAppearance.BorderSize = 0;
+            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnExit.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnExit.Location = new System.Drawing.Point(0, 280);
+            this.btnExit.Name = "btnExit";
+            this.btnExit.Size = new System.Drawing.Size(176, 40);
+            this.btnExit.TabIndex = 19;
+            this.btnExit.Text = "Đăng xuất";
+            this.btnExit.UseVisualStyleBackColor = false;
+            this.btnExit.Click += new System.EventHandler(this.btnExit_Click_1);
+            // 
+            // btnReg
+            // 
+            this.btnReg.BackColor = System.Drawing.Color.Silver;
+            this.btnReg.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReg.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnReg.FlatAppearance.BorderSize = 0;
+            this.btnReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnReg.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnReg.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnReg.Location = new System.Drawing.Point(0, 240);
+            this.btnReg.Name = "btnReg";
+            this.btnReg.Size = new System.Drawing.Size(176, 40);
+            this.btnReg.TabIndex = 18;
+            this.btnReg.Text = "Cấp tài khoản";
+            this.btnReg.UseVisualStyleBackColor = false;
+            this.btnReg.Click += new System.EventHandler(this.btnReg_Click_1);
+            // 
+            // btnIncome
+            // 
+            this.btnIncome.BackColor = System.Drawing.Color.Silver;
+            this.btnIncome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnIncome.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnIncome.FlatAppearance.BorderSize = 0;
+            this.btnIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnIncome.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnIncome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.btnIncome.Location = new System.Drawing.Point(0, 200);
+            this.btnIncome.Name = "btnIncome";
+            this.btnIncome.Size = new System.Drawing.Size(176, 40);
+            this.btnIncome.TabIndex = 17;
+            this.btnIncome.Text = "Doanh thu";
+            this.btnIncome.UseVisualStyleBackColor = false;
+            this.btnIncome.Click += new System.EventHandler(this.btnIncome_Click_1);
+            // 
+            // button3
+            // 
+            this.button3.BackColor = System.Drawing.Color.Silver;
+            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.button3.FlatAppearance.BorderSize = 0;
+            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button3.Location = new System.Drawing.Point(0, 160);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(176, 40);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Thông tin";
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click_1);
             // 
             // btnFacilities
             // 
@@ -276,70 +344,6 @@ namespace Gym_management
             this.panelControl.Size = new System.Drawing.Size(920, 27);
             this.panelControl.TabIndex = 1;
             this.panelControl.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelControl_MouseDown);
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.Silver;
-            this.button3.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button3.Location = new System.Drawing.Point(0, 160);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(176, 40);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Thông tin";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // btnIncome
-            // 
-            this.btnIncome.BackColor = System.Drawing.Color.Silver;
-            this.btnIncome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnIncome.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnIncome.FlatAppearance.BorderSize = 0;
-            this.btnIncome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnIncome.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnIncome.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnIncome.Location = new System.Drawing.Point(0, 200);
-            this.btnIncome.Name = "btnIncome";
-            this.btnIncome.Size = new System.Drawing.Size(176, 40);
-            this.btnIncome.TabIndex = 17;
-            this.btnIncome.Text = "Doanh thu";
-            this.btnIncome.UseVisualStyleBackColor = false;
-            // 
-            // btnReg
-            // 
-            this.btnReg.BackColor = System.Drawing.Color.Silver;
-            this.btnReg.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReg.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnReg.FlatAppearance.BorderSize = 0;
-            this.btnReg.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnReg.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnReg.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnReg.Location = new System.Drawing.Point(0, 240);
-            this.btnReg.Name = "btnReg";
-            this.btnReg.Size = new System.Drawing.Size(176, 40);
-            this.btnReg.TabIndex = 18;
-            this.btnReg.Text = "Cấp tài khoản";
-            this.btnReg.UseVisualStyleBackColor = false;
-            // 
-            // btnExit
-            // 
-            this.btnExit.BackColor = System.Drawing.Color.Silver;
-            this.btnExit.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnExit.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnExit.FlatAppearance.BorderSize = 0;
-            this.btnExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnExit.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.btnExit.Location = new System.Drawing.Point(0, 280);
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(176, 40);
-            this.btnExit.TabIndex = 19;
-            this.btnExit.Text = "Đăng xuất";
-            this.btnExit.UseVisualStyleBackColor = false;
             // 
             // fmTableManager
             // 
