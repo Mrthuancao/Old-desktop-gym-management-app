@@ -21,5 +21,12 @@ namespace Gym_management
         {
 
         }
+
+        private void btt_ctk_Click(object sender, EventArgs e)
+        {
+            CapTaiKhoan ctk= new CapTaiKhoan();
+            ctk.ShowDialog();
+            this.Show();
+        }
     }
 }
