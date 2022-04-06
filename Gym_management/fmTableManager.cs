@@ -116,35 +116,9 @@ namespace Gym_management
             ActivateButton(sender);
 
         }
+                          
 
-        private void btnIncome_Click(object sender, EventArgs e)
-        {
-            OpenChildform(new Doanh_thu());
-            ActivateButton(sender);
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            OpenChildform(new Thong_tin());
-            ActivateButton(sender);
-
-        }
-
-        private void btnReg_Click(object sender, EventArgs e)
-        {
-            OpenChildform(new Cap_TK());
-            ActivateButton(sender);
-
-        }
-
-        private void btnExit_Click(object sender, EventArgs e)
-        {
-            ActivateButton(sender);
-            this.Close();
-
-
-        }
+       
 
         private void Logo_Click(object sender, EventArgs e)
         {
@@ -198,6 +172,30 @@ namespace Gym_management
         {
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
+        }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            OpenChildform(new Thong_tin());
+            ActivateButton(sender);
+        }
+
+        private void btnIncome_Click_1(object sender, EventArgs e)
+        {
+            OpenChildform(new Doanh_thu());
+            ActivateButton(sender);
+        }
+
+        private void btnReg_Click_1(object sender, EventArgs e)
+        {
+            OpenChildform(new Cap_TK());
+            ActivateButton(sender);
+        }
+
+        private void btnExit_Click_1(object sender, EventArgs e)
+        {
+            ActivateButton(sender);
+            this.Close();
         }
     }
 }
