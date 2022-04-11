@@ -31,6 +31,7 @@ namespace Gym_management
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbpListAcc = new System.Windows.Forms.TabPage();
+            this.btt_ctk = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnDelAcc = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
@@ -53,8 +54,10 @@ namespace Gym_management
             this.txtSearch = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.btt_ctk = new System.Windows.Forms.Button();
+            this.dtgAccList = new System.Windows.Forms.DataGridView();
+            this.matk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tbpListAcc.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -65,7 +68,7 @@ namespace Gym_management
             this.panel5.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgAccList)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -91,6 +94,18 @@ namespace Gym_management
             this.tbpListAcc.TabIndex = 0;
             this.tbpListAcc.Text = "DS tài khoản";
             this.tbpListAcc.UseVisualStyleBackColor = true;
+            // 
+            // btt_ctk
+            // 
+            this.btt_ctk.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btt_ctk.ForeColor = System.Drawing.Color.DimGray;
+            this.btt_ctk.Location = new System.Drawing.Point(640, 397);
+            this.btt_ctk.Name = "btt_ctk";
+            this.btt_ctk.Size = new System.Drawing.Size(101, 44);
+            this.btt_ctk.TabIndex = 9;
+            this.btt_ctk.Text = "Cấp TK";
+            this.btt_ctk.UseVisualStyleBackColor = true;
+            this.btt_ctk.Click += new System.EventHandler(this.btt_ctk_Click);
             // 
             // panel3
             // 
@@ -321,31 +336,44 @@ namespace Gym_management
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dataGridView1);
+            this.panel1.Controls.Add(this.dtgAccList);
             this.panel1.Location = new System.Drawing.Point(6, 6);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(464, 457);
             this.panel1.TabIndex = 0;
             // 
-            // dataGridView1
+            // dtgAccList
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(2, 3);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(459, 451);
-            this.dataGridView1.TabIndex = 0;
+            this.dtgAccList.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgAccList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.matk,
+            this.username,
+            this.manv});
+            this.dtgAccList.Location = new System.Drawing.Point(2, 3);
+            this.dtgAccList.Name = "dtgAccList";
+            this.dtgAccList.Size = new System.Drawing.Size(459, 451);
+            this.dtgAccList.TabIndex = 0;
             // 
-            // btt_ctk
+            // matk
             // 
-            this.btt_ctk.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btt_ctk.ForeColor = System.Drawing.Color.DimGray;
-            this.btt_ctk.Location = new System.Drawing.Point(640, 397);
-            this.btt_ctk.Name = "btt_ctk";
-            this.btt_ctk.Size = new System.Drawing.Size(101, 44);
-            this.btt_ctk.TabIndex = 9;
-            this.btt_ctk.Text = "Cấp TK";
-            this.btt_ctk.UseVisualStyleBackColor = true;
-            this.btt_ctk.Click += new System.EventHandler(this.btt_ctk_Click);
+            this.matk.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.matk.DataPropertyName = "Mã tài khoản";
+            this.matk.HeaderText = "Mã tài khoản";
+            this.matk.Name = "matk";
+            // 
+            // username
+            // 
+            this.username.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.username.DataPropertyName = "Tên tài khoản";
+            this.username.HeaderText = "Tên tài khoản";
+            this.username.Name = "username";
+            // 
+            // manv
+            // 
+            this.manv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.manv.DataPropertyName = "Mã nhân viên QL";
+            this.manv.HeaderText = "Mã nhân viên QL";
+            this.manv.Name = "manv";
             // 
             // Cap_TK
             // 
@@ -372,7 +400,7 @@ namespace Gym_management
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtgAccList)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -384,7 +412,7 @@ namespace Gym_management
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtgAccList;
         private System.Windows.Forms.Label lbName;
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSearch;
@@ -405,5 +433,8 @@ namespace Gym_management
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Button btnDelAcc;
         private System.Windows.Forms.Button btt_ctk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn matk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn username;
+        private System.Windows.Forms.DataGridViewTextBoxColumn manv;
     }
 }

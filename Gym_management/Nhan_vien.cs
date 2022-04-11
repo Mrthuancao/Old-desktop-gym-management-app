@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gym_management.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,20 @@ namespace Gym_management
         public Nhan_vien()
         {
             InitializeComponent();
+            LoadStaffList();
+        }
+        void LoadStaffList()
+        {
+            string query = "SELECT manv as [Mã nhân viên], hoten as [Họ và tên], phai as [Giới tính], sdt as [SDT], email as [Email] from dbo.NHANVIEN";
+
+            DataProvider provider = new DataProvider();
+
+            dtgStaff.DataSource = provider.ExecuteQuery(query);
+        }
+
+        private void label8_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
