@@ -71,6 +71,10 @@ namespace Gym_management
             this.lblMem = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.mahv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phai = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -220,6 +224,11 @@ namespace Gym_management
             // dtgCus
             // 
             this.dtgCus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgCus.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.mahv,
+            this.hoten,
+            this.sdt,
+            this.phai});
             this.dtgCus.Location = new System.Drawing.Point(3, 0);
             this.dtgCus.Name = "dtgCus";
             this.dtgCus.Size = new System.Drawing.Size(504, 435);
@@ -547,6 +556,34 @@ namespace Gym_management
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
+            // mahv
+            // 
+            this.mahv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.mahv.DataPropertyName = "Mã hội viên";
+            this.mahv.HeaderText = "Mã hội viên";
+            this.mahv.Name = "mahv";
+            // 
+            // hoten
+            // 
+            this.hoten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.hoten.DataPropertyName = "Họ và tên";
+            this.hoten.HeaderText = "Họ và tên";
+            this.hoten.Name = "hoten";
+            // 
+            // sdt
+            // 
+            this.sdt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.sdt.DataPropertyName = "SDT";
+            this.sdt.HeaderText = "SDT";
+            this.sdt.Name = "sdt";
+            // 
+            // phai
+            // 
+            this.phai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.phai.DataPropertyName = "Giới tính";
+            this.phai.HeaderText = "Giới tính";
+            this.phai.Name = "phai";
+            // 
             // Khach_hang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -631,5 +668,9 @@ namespace Gym_management
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mahv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hoten;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phai;
     }
 }
