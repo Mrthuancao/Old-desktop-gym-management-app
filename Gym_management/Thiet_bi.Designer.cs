@@ -70,14 +70,14 @@
             this.btnDelete2 = new System.Windows.Forms.Button();
             this.btnInsert2 = new System.Windows.Forms.Button();
             this.dtgbaotri = new System.Windows.Forms.DataGridView();
-            this.tenthietbi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.matb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maltb = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.matbi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ngaybaotri = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.chiphi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.matb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenthietbi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenltb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -443,9 +443,9 @@
             // 
             this.dtgtb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtgtb.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.tenthietbi,
             this.matb,
-            this.maltb,
+            this.tenthietbi,
+            this.tenltb,
             this.soluong,
             this.gia});
             this.dtgtb.Location = new System.Drawing.Point(5, 53);
@@ -579,41 +579,6 @@
             this.dtgbaotri.Size = new System.Drawing.Size(393, 416);
             this.dtgbaotri.TabIndex = 7;
             // 
-            // tenthietbi
-            // 
-            this.tenthietbi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.tenthietbi.DataPropertyName = "Tên thiết bị";
-            this.tenthietbi.HeaderText = "Tên thiết bị";
-            this.tenthietbi.Name = "tenthietbi";
-            // 
-            // matb
-            // 
-            this.matb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.matb.DataPropertyName = "Mã thiết bị";
-            this.matb.HeaderText = "Mã thiết bị";
-            this.matb.Name = "matb";
-            // 
-            // maltb
-            // 
-            this.maltb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.maltb.DataPropertyName = "Mã loại thiết bị";
-            this.maltb.HeaderText = "Mã loại thiết bị";
-            this.maltb.Name = "maltb";
-            // 
-            // soluong
-            // 
-            this.soluong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.soluong.DataPropertyName = "Số lượng";
-            this.soluong.HeaderText = "Số lượng";
-            this.soluong.Name = "soluong";
-            // 
-            // gia
-            // 
-            this.gia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.gia.DataPropertyName = "Giá";
-            this.gia.HeaderText = "Giá";
-            this.gia.Name = "gia";
-            // 
             // matbi
             // 
             this.matbi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -634,6 +599,41 @@
             this.chiphi.DataPropertyName = "Chi phí";
             this.chiphi.HeaderText = "Chi phí";
             this.chiphi.Name = "chiphi";
+            // 
+            // matb
+            // 
+            this.matb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.matb.DataPropertyName = "Mã thiết bị";
+            this.matb.HeaderText = "Mã thiết bị";
+            this.matb.Name = "matb";
+            // 
+            // tenthietbi
+            // 
+            this.tenthietbi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tenthietbi.DataPropertyName = "Tên thiết bị";
+            this.tenthietbi.HeaderText = "Tên thiết bị";
+            this.tenthietbi.Name = "tenthietbi";
+            // 
+            // tenltb
+            // 
+            this.tenltb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tenltb.DataPropertyName = "Tên loại thiết bị";
+            this.tenltb.HeaderText = "Tên loại thiết bị";
+            this.tenltb.Name = "tenltb";
+            // 
+            // soluong
+            // 
+            this.soluong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.soluong.DataPropertyName = "Số lượng";
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.Name = "soluong";
+            // 
+            // gia
+            // 
+            this.gia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.gia.DataPropertyName = "Giá";
+            this.gia.HeaderText = "Giá";
+            this.gia.Name = "gia";
             // 
             // Thiet_bi
             // 
@@ -717,13 +717,13 @@
         private System.Windows.Forms.Button btnModify2;
         private System.Windows.Forms.Button btnDelete2;
         private System.Windows.Forms.Button btnView2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenthietbi;
-        private System.Windows.Forms.DataGridViewTextBoxColumn matb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maltb;
-        private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn gia;
         private System.Windows.Forms.DataGridViewTextBoxColumn matbi;
         private System.Windows.Forms.DataGridViewTextBoxColumn ngaybaotri;
         private System.Windows.Forms.DataGridViewTextBoxColumn chiphi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn matb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenthietbi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenltb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gia;
     }
 }

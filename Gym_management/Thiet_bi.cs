@@ -86,7 +86,7 @@ namespace Gym_management
         }
         void loadthietbi()
         {
-            string query = "SELECT matb as [Mã thiết bị], tenthietbi as [Tên thiết bị], maltb as [Mã loại thiết bị], soluong as [Số lượng], gia as [Giá] from dbo.THIETBI";
+            string query = "SELECT matb as [Mã thiết bị], tenthietbi as [Tên thiết bị], soluong as [Số lượng], gia as [Giá], tenltb as [Tên loại thiết bị] from THIETBI, LOAITHIETBI where THIETBI.maltb= LOAITHIETBI.maltb";
             dtgtb.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
         void loadbaotri()
