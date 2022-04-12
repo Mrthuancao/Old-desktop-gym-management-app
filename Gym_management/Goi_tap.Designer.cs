@@ -29,7 +29,7 @@ namespace Gym_management
         /// </summary>
         private void InitializeComponent()
         {
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtggoi = new System.Windows.Forms.DataGridView();
             this.lblMem = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -60,7 +60,9 @@ namespace Gym_management
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.magoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tengoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dtggoi)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -72,13 +74,16 @@ namespace Gym_management
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // dtggoi
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 58);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(513, 435);
-            this.dataGridView1.TabIndex = 8;
+            this.dtggoi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtggoi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.magoi,
+            this.tengoi});
+            this.dtggoi.Location = new System.Drawing.Point(4, 58);
+            this.dtggoi.Name = "dtggoi";
+            this.dtggoi.Size = new System.Drawing.Size(513, 435);
+            this.dtggoi.TabIndex = 8;
             // 
             // lblMem
             // 
@@ -146,7 +151,7 @@ namespace Gym_management
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(147, 7);
+            this.textBox3.Location = new System.Drawing.Point(147, 8);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(237, 25);
@@ -158,7 +163,7 @@ namespace Gym_management
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(5, 4);
+            this.label4.Location = new System.Drawing.Point(3, 11);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(129, 22);
             this.label4.TabIndex = 10;
@@ -404,19 +409,33 @@ namespace Gym_management
             this.panel4.Size = new System.Drawing.Size(394, 435);
             this.panel4.TabIndex = 7;
             // 
+            // magoi
+            // 
+            this.magoi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.magoi.DataPropertyName = "Mã gói";
+            this.magoi.HeaderText = "Mã gói";
+            this.magoi.Name = "magoi";
+            // 
+            // tengoi
+            // 
+            this.tengoi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tengoi.DataPropertyName = "Tên ";
+            this.tengoi.HeaderText = "Tên gói";
+            this.tengoi.Name = "tengoi";
+            // 
             // Goi_tap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(920, 496);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dtggoi);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel4);
             this.Name = "Goi_tap";
             this.Text = "Goi_tap";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtggoi)).EndInit();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -438,7 +457,7 @@ namespace Gym_management
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtggoi;
         private System.Windows.Forms.Label lblMem;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Panel panel5;
@@ -469,5 +488,7 @@ namespace Gym_management
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn magoi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tengoi;
     }
 }

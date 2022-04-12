@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Gym_management.DAO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,8 @@ namespace Gym_management
         public Thiet_bi()
         {
             InitializeComponent();
+            loadthietbi();
+            loadbaotri();
         }
 
         private void Thiet_bi_Load(object sender, EventArgs e)
@@ -81,5 +84,19 @@ namespace Gym_management
         {
 
         }
+        void loadthietbi()
+        {
+            string query = "SELECT matb as [Mã thiết bị], tenthietbi as [Tên thiết bị], maltb as [Mã loại thiết bị], soluong as [Số lượng], gia as [Giá] from dbo.THIETBI";
+            DataProvider provider = new DataProvider();
+            dtgtb.DataSource = provider.ExecuteQuery(query);
+        }
+        void loadbaotri()
+        {
+            string query = "SELECT matb as [Mã thiết bị], ngaybaotri as [Ngày bảo trì], chiphi as [Chi phí] from dbo.BAOTRI";
+            DataProvider provider = new DataProvider();
+            dtgbaotri.DataSource = provider.ExecuteQuery(query);
+        }
+
     }
 }
+   
