@@ -70,6 +70,14 @@
             this.btnDelete2 = new System.Windows.Forms.Button();
             this.btnInsert2 = new System.Windows.Forms.Button();
             this.dtgbaotri = new System.Windows.Forms.DataGridView();
+            this.tenthietbi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.matb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maltb = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.matbi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngaybaotri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.chiphi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -434,6 +442,12 @@
             // dtgtb
             // 
             this.dtgtb.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgtb.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.tenthietbi,
+            this.matb,
+            this.maltb,
+            this.soluong,
+            this.gia});
             this.dtgtb.Location = new System.Drawing.Point(5, 53);
             this.dtgtb.Margin = new System.Windows.Forms.Padding(2);
             this.dtgtb.Name = "dtgtb";
@@ -553,6 +567,10 @@
             // dtgbaotri
             // 
             this.dtgbaotri.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtgbaotri.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.matbi,
+            this.ngaybaotri,
+            this.chiphi});
             this.dtgbaotri.Location = new System.Drawing.Point(5, 53);
             this.dtgbaotri.Margin = new System.Windows.Forms.Padding(2);
             this.dtgbaotri.Name = "dtgbaotri";
@@ -560,6 +578,62 @@
             this.dtgbaotri.RowTemplate.Height = 24;
             this.dtgbaotri.Size = new System.Drawing.Size(393, 416);
             this.dtgbaotri.TabIndex = 7;
+            // 
+            // tenthietbi
+            // 
+            this.tenthietbi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tenthietbi.DataPropertyName = "Tên thiết bị";
+            this.tenthietbi.HeaderText = "Tên thiết bị";
+            this.tenthietbi.Name = "tenthietbi";
+            // 
+            // matb
+            // 
+            this.matb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.matb.DataPropertyName = "Mã thiết bị";
+            this.matb.HeaderText = "Mã thiết bị";
+            this.matb.Name = "matb";
+            // 
+            // maltb
+            // 
+            this.maltb.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.maltb.DataPropertyName = "Mã loại thiết bị";
+            this.maltb.HeaderText = "Mã loại thiết bị";
+            this.maltb.Name = "maltb";
+            // 
+            // soluong
+            // 
+            this.soluong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.soluong.DataPropertyName = "Số lượng";
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.Name = "soluong";
+            // 
+            // gia
+            // 
+            this.gia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.gia.DataPropertyName = "Giá";
+            this.gia.HeaderText = "Giá";
+            this.gia.Name = "gia";
+            // 
+            // matbi
+            // 
+            this.matbi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.matbi.DataPropertyName = "Mã thiết bị";
+            this.matbi.HeaderText = "Mã thiết bị";
+            this.matbi.Name = "matbi";
+            // 
+            // ngaybaotri
+            // 
+            this.ngaybaotri.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ngaybaotri.DataPropertyName = "Ngày bảo trì";
+            this.ngaybaotri.HeaderText = "Ngày bảo trì";
+            this.ngaybaotri.Name = "ngaybaotri";
+            // 
+            // chiphi
+            // 
+            this.chiphi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.chiphi.DataPropertyName = "Chi phí";
+            this.chiphi.HeaderText = "Chi phí";
+            this.chiphi.Name = "chiphi";
             // 
             // Thiet_bi
             // 
@@ -643,5 +717,13 @@
         private System.Windows.Forms.Button btnModify2;
         private System.Windows.Forms.Button btnDelete2;
         private System.Windows.Forms.Button btnView2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenthietbi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn matb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maltb;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn matbi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngaybaotri;
+        private System.Windows.Forms.DataGridViewTextBoxColumn chiphi;
     }
 }
