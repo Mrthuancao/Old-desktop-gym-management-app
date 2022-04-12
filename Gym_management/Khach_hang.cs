@@ -43,9 +43,8 @@ namespace Gym_management
         {
             string query = "SELECT mahv as [Mã hội viên], hoten as [Họ và tên], sdt as [SDT], phai as [Giới tính] from dbo.HOIVIEN";
 
-            DataProvider provider = new DataProvider();
 
-            dtgCus.DataSource = provider.ExecuteQuery(query);
+            dtgCus.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
     }
 }

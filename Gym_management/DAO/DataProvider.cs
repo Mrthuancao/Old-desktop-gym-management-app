@@ -10,7 +10,16 @@ namespace Gym_management.DAO
 {
     public class DataProvider
     {
-        private string connectionSTR = "Data Source=MAY01;Initial Catalog = Gym_Management; Integrated Security = True";
+        private static DataProvider instance; 
+
+        public static DataProvider Instance
+        {
+            get { if (instance == null) instance = new DataProvider(); return DataProvider.instance; }
+            private set { DataProvider.instance = value; }
+        }
+
+        private DataProvider() { }
+        private string connectionSTR = "Data Source=THAI-PC;Initial Catalog=Gym_Management;Integrated Security=True";
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();

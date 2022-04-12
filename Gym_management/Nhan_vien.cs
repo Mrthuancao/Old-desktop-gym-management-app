@@ -22,9 +22,7 @@ namespace Gym_management
         {
             string query = "SELECT manv as [Mã nhân viên], hoten as [Họ và tên], phai as [Giới tính], sdt as [SDT], email as [Email] from dbo.NHANVIEN";
 
-            DataProvider provider = new DataProvider();
-
-            dtgStaff.DataSource = provider.ExecuteQuery(query);
+            dtgStaff.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
 
         private void label8_Click(object sender, EventArgs e)

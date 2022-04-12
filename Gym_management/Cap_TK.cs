@@ -34,9 +34,7 @@ namespace Gym_management
         {
             string query = "SELECT matk as [Mã tài khoản], username as [Tên tài khoản], manv as [Mã nhân viên QL] from dbo.TAIKHOAN";
 
-            DataProvider provider = new DataProvider();
-
-            dtgAccList.DataSource = provider.ExecuteQuery(query);
+            dtgAccList.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
     }
 }

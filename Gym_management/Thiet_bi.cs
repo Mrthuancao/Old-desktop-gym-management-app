@@ -87,16 +87,14 @@ namespace Gym_management
         void loadthietbi()
         {
             string query = "SELECT matb as [Mã thiết bị], tenthietbi as [Tên thiết bị], maltb as [Mã loại thiết bị], soluong as [Số lượng], gia as [Giá] from dbo.THIETBI";
-            DataProvider provider = new DataProvider();
-            dtgtb.DataSource = provider.ExecuteQuery(query);
+            dtgtb.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
         void loadbaotri()
         {
             string query = "SELECT matb as [Mã thiết bị], ngaybaotri as [Ngày bảo trì], chiphi as [Chi phí] from dbo.BAOTRI";
-            DataProvider provider = new DataProvider();
-            dtgbaotri.DataSource = provider.ExecuteQuery(query);
-        }
+            dtgbaotri.DataSource = DataProvider.Instance.ExecuteQuery(query);
 
+        }
     }
 }
    

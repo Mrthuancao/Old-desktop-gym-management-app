@@ -21,8 +21,7 @@ namespace Gym_management
         void LoadGoi()
         { 
             string query = "SELECT magoi as [Mã gói], tengoi as [Tên gói] from dbo.GOITAP";
-            DataProvider provider = new DataProvider();
-            dtggoi.DataSource = provider.ExecuteQuery(query);
+            dtggoi.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
     }
 }
