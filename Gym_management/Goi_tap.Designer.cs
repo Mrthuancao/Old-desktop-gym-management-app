@@ -419,7 +419,7 @@ namespace Gym_management
             // tengoi
             // 
             this.tengoi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.tengoi.DataPropertyName = "Tên ";
+            this.tengoi.DataPropertyName = "Tên gói";
             this.tengoi.HeaderText = "Tên gói";
             this.tengoi.Name = "tengoi";
             // 
