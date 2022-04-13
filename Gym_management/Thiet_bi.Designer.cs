@@ -606,6 +606,8 @@
             this.matb.DataPropertyName = "Mã thiết bị";
             this.matb.HeaderText = "Mã thiết bị";
             this.matb.Name = "matb";
+            this.matb.ReadOnly = true;
+            this.matb.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // tenthietbi
             // 
@@ -613,6 +615,8 @@
             this.tenthietbi.DataPropertyName = "Tên thiết bị";
             this.tenthietbi.HeaderText = "Tên thiết bị";
             this.tenthietbi.Name = "tenthietbi";
+            this.tenthietbi.ReadOnly = true;
+            this.tenthietbi.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // tenltb
             // 
@@ -620,6 +624,8 @@
             this.tenltb.DataPropertyName = "Tên loại thiết bị";
             this.tenltb.HeaderText = "Tên loại thiết bị";
             this.tenltb.Name = "tenltb";
+            this.tenltb.ReadOnly = true;
+            this.tenltb.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // soluong
             // 
@@ -627,6 +633,8 @@
             this.soluong.DataPropertyName = "Số lượng";
             this.soluong.HeaderText = "Số lượng";
             this.soluong.Name = "soluong";
+            this.soluong.ReadOnly = true;
+            this.soluong.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // gia
             // 
@@ -634,6 +642,8 @@
             this.gia.DataPropertyName = "Giá";
             this.gia.HeaderText = "Giá";
             this.gia.Name = "gia";
+            this.gia.ReadOnly = true;
+            this.gia.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Thiet_bi
             // 

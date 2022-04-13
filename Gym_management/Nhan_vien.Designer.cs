@@ -62,11 +62,6 @@ namespace Gym_management
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dtgStaff = new System.Windows.Forms.DataGridView();
-            this.manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblMemCode = new System.Windows.Forms.Label();
             this.txtMemCode = new System.Windows.Forms.TextBox();
@@ -78,6 +73,11 @@ namespace Gym_management
             this.btnUpdate = new System.Windows.Forms.Button();
             this.btnDel = new System.Windows.Forms.Button();
             this.btnInsert = new System.Windows.Forms.Button();
+            this.manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel14.SuspendLayout();
@@ -460,46 +460,6 @@ namespace Gym_management
             this.dtgStaff.Size = new System.Drawing.Size(504, 435);
             this.dtgStaff.TabIndex = 0;
             // 
-            // manv
-            // 
-            this.manv.DataPropertyName = "Mã nhân viên";
-            this.manv.FillWeight = 152.2843F;
-            this.manv.HeaderText = "Mã nhân viên";
-            this.manv.Name = "manv";
-            this.manv.Width = 60;
-            // 
-            // hoten
-            // 
-            this.hoten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.hoten.DataPropertyName = "Họ và tên";
-            this.hoten.FillWeight = 86.92894F;
-            this.hoten.HeaderText = "Họ và tên";
-            this.hoten.Name = "hoten";
-            // 
-            // phai
-            // 
-            this.phai.DataPropertyName = "Giới tính";
-            this.phai.FillWeight = 86.92894F;
-            this.phai.HeaderText = "Giới tính";
-            this.phai.Name = "phai";
-            this.phai.Width = 50;
-            // 
-            // sdt
-            // 
-            this.sdt.DataPropertyName = "SDT";
-            this.sdt.FillWeight = 86.92894F;
-            this.sdt.HeaderText = "SDT";
-            this.sdt.Name = "sdt";
-            this.sdt.Width = 70;
-            // 
-            // email
-            // 
-            this.email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.email.DataPropertyName = "Email";
-            this.email.FillWeight = 86.92894F;
-            this.email.HeaderText = "Email";
-            this.email.Name = "email";
-            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.lblMemCode);
@@ -617,6 +577,56 @@ namespace Gym_management
             this.btnInsert.TabIndex = 1;
             this.btnInsert.Text = "Thêm";
             this.btnInsert.UseVisualStyleBackColor = true;
+            // 
+            // manv
+            // 
+            this.manv.DataPropertyName = "Mã nhân viên";
+            this.manv.FillWeight = 152.2843F;
+            this.manv.HeaderText = "Mã nhân viên";
+            this.manv.Name = "manv";
+            this.manv.ReadOnly = true;
+            this.manv.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.manv.Width = 60;
+            // 
+            // hoten
+            // 
+            this.hoten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.hoten.DataPropertyName = "Họ và tên";
+            this.hoten.FillWeight = 86.92894F;
+            this.hoten.HeaderText = "Họ và tên";
+            this.hoten.Name = "hoten";
+            this.hoten.ReadOnly = true;
+            this.hoten.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // phai
+            // 
+            this.phai.DataPropertyName = "Giới tính";
+            this.phai.FillWeight = 86.92894F;
+            this.phai.HeaderText = "Giới tính";
+            this.phai.Name = "phai";
+            this.phai.ReadOnly = true;
+            this.phai.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.phai.Width = 50;
+            // 
+            // sdt
+            // 
+            this.sdt.DataPropertyName = "SDT";
+            this.sdt.FillWeight = 86.92894F;
+            this.sdt.HeaderText = "SDT";
+            this.sdt.Name = "sdt";
+            this.sdt.ReadOnly = true;
+            this.sdt.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.sdt.Width = 70;
+            // 
+            // email
+            // 
+            this.email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.email.DataPropertyName = "Email";
+            this.email.FillWeight = 86.92894F;
+            this.email.HeaderText = "Email";
+            this.email.Name = "email";
+            this.email.ReadOnly = true;
+            this.email.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Nhan_vien
             // 

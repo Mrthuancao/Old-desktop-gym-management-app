@@ -360,6 +360,8 @@ namespace Gym_management
             this.matk.DataPropertyName = "Mã tài khoản";
             this.matk.HeaderText = "Mã tài khoản";
             this.matk.Name = "matk";
+            this.matk.ReadOnly = true;
+            this.matk.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // username
             // 
@@ -367,6 +369,8 @@ namespace Gym_management
             this.username.DataPropertyName = "Tên tài khoản";
             this.username.HeaderText = "Tên tài khoản";
             this.username.Name = "username";
+            this.username.ReadOnly = true;
+            this.username.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // manv
             // 
@@ -374,6 +378,8 @@ namespace Gym_management
             this.manv.DataPropertyName = "Mã nhân viên QL";
             this.manv.HeaderText = "Mã nhân viên QL";
             this.manv.Name = "manv";
+            this.manv.ReadOnly = true;
+            this.manv.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Cap_TK
             // 

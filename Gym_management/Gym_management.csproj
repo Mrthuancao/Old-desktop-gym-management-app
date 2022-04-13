@@ -96,6 +96,12 @@
     <Compile Include="Goi_tap.Designer.cs">
       <DependentUpon>Goi_tap.cs</DependentUpon>
     </Compile>
+    <Compile Include="HoiVien_Input.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HoiVien_Input.Designer.cs">
+      <DependentUpon>HoiVien_Input.cs</DependentUpon>
+    </Compile>
     <Compile Include="Khach_hang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Goi_tap.resx">
       <DependentUpon>Goi_tap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HoiVien_Input.resx">
+      <DependentUpon>HoiVien_Input.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Khach_hang.resx">
       <DependentUpon>Khach_hang.cs</DependentUpon>
