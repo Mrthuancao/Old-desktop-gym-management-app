@@ -22,7 +22,8 @@ namespace Gym_management
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            HoiVien_Input f = new HoiVien_Input();
+            f.ShowDialog();
         }
 
         private void txtSearch_TextChanged(object sender, EventArgs e)

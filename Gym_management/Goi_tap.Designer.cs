@@ -415,6 +415,8 @@ namespace Gym_management
             this.magoi.DataPropertyName = "Mã gói";
             this.magoi.HeaderText = "Mã gói";
             this.magoi.Name = "magoi";
+            this.magoi.ReadOnly = true;
+            this.magoi.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // tengoi
             // 
@@ -422,6 +424,8 @@ namespace Gym_management
             this.tengoi.DataPropertyName = "Tên gói";
             this.tengoi.HeaderText = "Tên gói";
             this.tengoi.Name = "tengoi";
+            this.tengoi.ReadOnly = true;
+            this.tengoi.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
             // Goi_tap
             // 

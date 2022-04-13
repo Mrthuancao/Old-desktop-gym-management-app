@@ -19,7 +19,7 @@ namespace Gym_management.DAO
         }
 
         private DataProvider() { }
-        private string connectionSTR = "Data Source=MAY01;Initial Catalog=Gym_Management;Integrated Security=True";
+        private string connectionSTR = "Data Source=THAI-PC;Initial Catalog=Gym_Management;Integrated Security=True";
         public DataTable ExecuteQuery(string query, object[] parameter = null)
         {
             DataTable data = new DataTable();

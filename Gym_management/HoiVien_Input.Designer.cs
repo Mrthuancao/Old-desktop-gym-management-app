@@ -1,7 +1,7 @@
 ﻿
 namespace Gym_management
 {
-    partial class Khach_hang
+    partial class HoiVien_Input
     {
         /// <summary>
         /// Required designer variable.
@@ -29,19 +29,7 @@ namespace Gym_management
         /// </summary>
         private void InitializeComponent()
         {
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnView = new System.Windows.Forms.Button();
-            this.btnUpdate = new System.Windows.Forms.Button();
-            this.btnDel = new System.Windows.Forms.Button();
-            this.btnInsert = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblMemCode = new System.Windows.Forms.Label();
-            this.txtMemCode = new System.Windows.Forms.TextBox();
-            this.lbName = new System.Windows.Forms.Label();
-            this.txtSearch = new System.Windows.Forms.TextBox();
-            this.btnSearch = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.dtgCus = new System.Windows.Forms.DataGridView();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(HoiVien_Input));
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel12 = new System.Windows.Forms.Panel();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
@@ -71,15 +59,6 @@ namespace Gym_management
             this.lblMem = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.mahv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phai = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtgCus)).BeginInit();
             this.panel4.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel11.SuspendLayout();
@@ -92,153 +71,9 @@ namespace Gym_management
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.btnView);
-            this.panel1.Controls.Add(this.btnUpdate);
-            this.panel1.Controls.Add(this.btnDel);
-            this.panel1.Controls.Add(this.btnInsert);
-            this.panel1.Location = new System.Drawing.Point(6, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(396, 49);
-            this.panel1.TabIndex = 0;
-            // 
-            // btnView
-            // 
-            this.btnView.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnView.ForeColor = System.Drawing.Color.DimGray;
-            this.btnView.Location = new System.Drawing.Point(300, 3);
-            this.btnView.Name = "btnView";
-            this.btnView.Size = new System.Drawing.Size(93, 43);
-            this.btnView.TabIndex = 4;
-            this.btnView.Text = "Xem";
-            this.btnView.UseVisualStyleBackColor = true;
-            // 
-            // btnUpdate
-            // 
-            this.btnUpdate.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUpdate.ForeColor = System.Drawing.Color.DimGray;
-            this.btnUpdate.Location = new System.Drawing.Point(201, 3);
-            this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(93, 43);
-            this.btnUpdate.TabIndex = 3;
-            this.btnUpdate.Text = "Sửa";
-            this.btnUpdate.UseVisualStyleBackColor = true;
-            // 
-            // btnDel
-            // 
-            this.btnDel.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDel.ForeColor = System.Drawing.Color.DimGray;
-            this.btnDel.Location = new System.Drawing.Point(102, 3);
-            this.btnDel.Name = "btnDel";
-            this.btnDel.Size = new System.Drawing.Size(93, 43);
-            this.btnDel.TabIndex = 2;
-            this.btnDel.Text = "Xóa";
-            this.btnDel.UseVisualStyleBackColor = true;
-            // 
-            // btnInsert
-            // 
-            this.btnInsert.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnInsert.ForeColor = System.Drawing.Color.DimGray;
-            this.btnInsert.Location = new System.Drawing.Point(2, 3);
-            this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(93, 43);
-            this.btnInsert.TabIndex = 1;
-            this.btnInsert.Text = "Thêm";
-            this.btnInsert.UseVisualStyleBackColor = true;
-            this.btnInsert.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.lblMemCode);
-            this.panel2.Controls.Add(this.txtMemCode);
-            this.panel2.Controls.Add(this.lbName);
-            this.panel2.Controls.Add(this.txtSearch);
-            this.panel2.Controls.Add(this.btnSearch);
-            this.panel2.Location = new System.Drawing.Point(408, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(508, 46);
-            this.panel2.TabIndex = 1;
-            // 
-            // lblMemCode
-            // 
-            this.lblMemCode.AutoSize = true;
-            this.lblMemCode.BackColor = System.Drawing.Color.Transparent;
-            this.lblMemCode.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMemCode.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblMemCode.Location = new System.Drawing.Point(230, 12);
-            this.lblMemCode.Name = "lblMemCode";
-            this.lblMemCode.Size = new System.Drawing.Size(66, 22);
-            this.lblMemCode.TabIndex = 8;
-            this.lblMemCode.Text = "Mã Hv";
-            // 
-            // txtMemCode
-            // 
-            this.txtMemCode.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMemCode.Location = new System.Drawing.Point(297, 10);
-            this.txtMemCode.Name = "txtMemCode";
-            this.txtMemCode.Size = new System.Drawing.Size(110, 27);
-            this.txtMemCode.TabIndex = 6;
-            // 
-            // lbName
-            // 
-            this.lbName.AutoSize = true;
-            this.lbName.BackColor = System.Drawing.Color.Transparent;
-            this.lbName.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lbName.Location = new System.Drawing.Point(3, 13);
-            this.lbName.Name = "lbName";
-            this.lbName.Size = new System.Drawing.Size(42, 22);
-            this.lbName.TabIndex = 6;
-            this.lbName.Text = "Tên";
-            this.lbName.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txtSearch
-            // 
-            this.txtSearch.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearch.Location = new System.Drawing.Point(51, 9);
-            this.txtSearch.Name = "txtSearch";
-            this.txtSearch.Size = new System.Drawing.Size(162, 27);
-            this.txtSearch.TabIndex = 5;
-            this.txtSearch.TextChanged += new System.EventHandler(this.txtSearch_TextChanged);
-            // 
-            // btnSearch
-            // 
-            this.btnSearch.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSearch.ForeColor = System.Drawing.Color.DimGray;
-            this.btnSearch.Location = new System.Drawing.Point(418, 6);
-            this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(87, 34);
-            this.btnSearch.TabIndex = 7;
-            this.btnSearch.Text = "Tìm";
-            this.btnSearch.UseVisualStyleBackColor = true;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.dtgCus);
-            this.panel3.Location = new System.Drawing.Point(3, 58);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(510, 446);
-            this.panel3.TabIndex = 0;
-            this.panel3.TabStop = true;
-            // 
-            // dtgCus
-            // 
-            this.dtgCus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtgCus.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.mahv,
-            this.hoten,
-            this.sdt,
-            this.phai});
-            this.dtgCus.Location = new System.Drawing.Point(3, 0);
-            this.dtgCus.Name = "dtgCus";
-            this.dtgCus.Size = new System.Drawing.Size(504, 435);
-            this.dtgCus.TabIndex = 0;
-            // 
             // panel4
             // 
             this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel4.Controls.Add(this.label8);
             this.panel4.Controls.Add(this.panel12);
             this.panel4.Controls.Add(this.button1);
             this.panel4.Controls.Add(this.panel11);
@@ -249,10 +84,10 @@ namespace Gym_management
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.pictureBox1);
-            this.panel4.Location = new System.Drawing.Point(519, 58);
+            this.panel4.Location = new System.Drawing.Point(5, 1);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(394, 435);
-            this.panel4.TabIndex = 2;
+            this.panel4.TabIndex = 3;
             // 
             // panel12
             // 
@@ -305,11 +140,11 @@ namespace Gym_management
             // 
             this.button1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.ForeColor = System.Drawing.Color.DimGray;
-            this.button1.Location = new System.Drawing.Point(164, 386);
+            this.button1.Location = new System.Drawing.Point(142, 386);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 43);
+            this.button1.Size = new System.Drawing.Size(109, 48);
             this.button1.TabIndex = 12;
-            this.button1.Text = "Gia hạn";
+            this.button1.Text = "Thêm mới";
             this.button1.UseVisualStyleBackColor = true;
             // 
             // panel11
@@ -533,9 +368,9 @@ namespace Gym_management
             this.lblMem.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.lblMem.Location = new System.Drawing.Point(3, 7);
             this.lblMem.Name = "lblMem";
-            this.lblMem.Size = new System.Drawing.Size(70, 22);
+            this.lblMem.Size = new System.Drawing.Size(66, 22);
             this.lblMem.TabIndex = 10;
-            this.lblMem.Text = "Mã HV";
+            this.lblMem.Text = "Mã Hv";
             // 
             // textBox2
             // 
@@ -551,80 +386,24 @@ namespace Gym_management
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Gym_management.Properties.Resources.useravt;
-            this.pictureBox1.Location = new System.Drawing.Point(243, 5);
+            this.pictureBox1.Location = new System.Drawing.Point(164, 7);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(87, 77);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(5, 5);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(188, 26);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Thông tin chi tiết";
-            // 
-            // mahv
-            // 
-            this.mahv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.mahv.DataPropertyName = "Mã hội viên";
-            this.mahv.HeaderText = "Mã hội viên";
-            this.mahv.Name = "mahv";
-            this.mahv.ReadOnly = true;
-            this.mahv.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // hoten
-            // 
-            this.hoten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.hoten.DataPropertyName = "Họ và tên";
-            this.hoten.HeaderText = "Họ và tên";
-            this.hoten.Name = "hoten";
-            this.hoten.ReadOnly = true;
-            this.hoten.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // sdt
-            // 
-            this.sdt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.sdt.DataPropertyName = "SDT";
-            this.sdt.HeaderText = "SDT";
-            this.sdt.Name = "sdt";
-            this.sdt.ReadOnly = true;
-            this.sdt.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // phai
-            // 
-            this.phai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.phai.DataPropertyName = "Giới tính";
-            this.phai.HeaderText = "Giới tính";
-            this.phai.Name = "phai";
-            this.phai.ReadOnly = true;
-            this.phai.Resizable = System.Windows.Forms.DataGridViewTriState.False;
-            // 
-            // Khach_hang
+            // HoiVien_Input
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.LightGray;
-            this.ClientSize = new System.Drawing.Size(918, 497);
+            this.ClientSize = new System.Drawing.Size(403, 439);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Name = "Khach_hang";
-            this.Text = "Khach_hang";
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtgCus)).EndInit();
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Name = "HoiVien_Input";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Thêm mới hội viên";
             this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.panel12.PerformLayout();
             this.panel11.ResumeLayout(false);
@@ -648,34 +427,12 @@ namespace Gym_management
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button btnInsert;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.DataGridView dtgCus;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnView;
-        private System.Windows.Forms.Button btnUpdate;
-        private System.Windows.Forms.Button btnDel;
-        private System.Windows.Forms.TextBox txtSearch;
-        private System.Windows.Forms.Button btnSearch;
-        private System.Windows.Forms.Label lbName;
-        private System.Windows.Forms.Label lblMemCode;
-        private System.Windows.Forms.TextBox txtMemCode;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label lblMem;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Panel panel12;
+        private System.Windows.Forms.CheckBox checkBox3;
+        private System.Windows.Forms.CheckBox checkBox4;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox4;
@@ -685,15 +442,19 @@ namespace Gym_management
         private System.Windows.Forms.Panel panel9;
         public System.Windows.Forms.DateTimePicker dateTimePicker2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mahv;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hoten;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phai;
+        private System.Windows.Forms.Panel panel8;
+        public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox checkBox1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Label lblMem;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
