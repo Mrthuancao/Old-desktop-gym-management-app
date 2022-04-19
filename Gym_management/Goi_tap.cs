@@ -20,8 +20,17 @@ namespace Gym_management
         }
         void LoadGoi()
         { 
-            string query = "SELECT magoi as [Mã gói], tengoi as [Tên gói] from dbo.GOITAP";
+            string query = "SELECT magoi as [Mã gói], tengoi as [Tên gói], giamoithang as [Giá] from dbo.GOITAP";
             dtggoi.DataSource = DataProvider.Instance.ExecuteQuery(query);
+        }
+        int index;
+        private void dtggoi_Click(object sender, EventArgs e)
+        {
+            index = dtggoi.CurrentRow.Index;
+            tb_magoi.Text = dtggoi.Rows[index].Cells[0].Value.ToString();
+            tb_tengoi.Text = dtggoi.Rows[index].Cells[1].Value.ToString();
+            tb_giamt.Text = dtggoi.Rows[index].Cells[2].Value.ToString();
+
         }
     }
 }

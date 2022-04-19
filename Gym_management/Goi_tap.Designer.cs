@@ -31,16 +31,16 @@ namespace Gym_management
         {
             this.dtggoi = new System.Windows.Forms.DataGridView();
             this.lblMem = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_magoi = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_tengoi = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_giamt = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox4 = new System.Windows.Forms.CheckBox();
@@ -62,6 +62,7 @@ namespace Gym_management
             this.panel4 = new System.Windows.Forms.Panel();
             this.magoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tengoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.giamoithang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtggoi)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
@@ -79,11 +80,13 @@ namespace Gym_management
             this.dtggoi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtggoi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.magoi,
-            this.tengoi});
+            this.tengoi,
+            this.giamoithang});
             this.dtggoi.Location = new System.Drawing.Point(4, 58);
             this.dtggoi.Name = "dtggoi";
             this.dtggoi.Size = new System.Drawing.Size(513, 435);
             this.dtggoi.TabIndex = 8;
+            this.dtggoi.Click += new System.EventHandler(this.dtggoi_Click);
             // 
             // lblMem
             // 
@@ -97,21 +100,21 @@ namespace Gym_management
             this.lblMem.TabIndex = 10;
             this.lblMem.Text = "Mã gói ";
             // 
-            // textBox2
+            // tb_magoi
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(82, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(302, 27);
-            this.textBox2.TabIndex = 8;
+            this.tb_magoi.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_magoi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_magoi.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_magoi.Location = new System.Drawing.Point(82, 3);
+            this.tb_magoi.Name = "tb_magoi";
+            this.tb_magoi.ReadOnly = true;
+            this.tb_magoi.Size = new System.Drawing.Size(302, 27);
+            this.tb_magoi.TabIndex = 8;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.lblMem);
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.tb_magoi);
             this.panel5.Location = new System.Drawing.Point(3, 88);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(388, 33);
@@ -129,21 +132,21 @@ namespace Gym_management
             this.label1.TabIndex = 10;
             this.label1.Text = "Tên gói ";
             // 
-            // textBox1
+            // tb_tengoi
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(82, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(302, 27);
-            this.textBox1.TabIndex = 9;
+            this.tb_tengoi.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_tengoi.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_tengoi.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_tengoi.Location = new System.Drawing.Point(82, 3);
+            this.tb_tengoi.Name = "tb_tengoi";
+            this.tb_tengoi.ReadOnly = true;
+            this.tb_tengoi.Size = new System.Drawing.Size(302, 27);
+            this.tb_tengoi.TabIndex = 9;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.label1);
-            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.tb_tengoi);
             this.panel6.Location = new System.Drawing.Point(3, 127);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(388, 33);
@@ -191,21 +194,21 @@ namespace Gym_management
             this.label6.TabIndex = 10;
             this.label6.Text = "Giá mỗi tháng ";
             // 
-            // textBox4
+            // tb_giamt
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(147, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(237, 27);
-            this.textBox4.TabIndex = 11;
+            this.tb_giamt.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_giamt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_giamt.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_giamt.Location = new System.Drawing.Point(147, 3);
+            this.tb_giamt.Name = "tb_giamt";
+            this.tb_giamt.ReadOnly = true;
+            this.tb_giamt.Size = new System.Drawing.Size(237, 27);
+            this.tb_giamt.TabIndex = 11;
             // 
             // panel11
             // 
             this.panel11.Controls.Add(this.label6);
-            this.panel11.Controls.Add(this.textBox4);
+            this.panel11.Controls.Add(this.tb_giamt);
             this.panel11.Location = new System.Drawing.Point(3, 205);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(388, 33);
@@ -427,6 +430,14 @@ namespace Gym_management
             this.tengoi.ReadOnly = true;
             this.tengoi.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
+            // giamoithang
+            // 
+            this.giamoithang.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.giamoithang.DataPropertyName = "Giá";
+            this.giamoithang.HeaderText = "Giá";
+            this.giamoithang.Name = "giamoithang";
+            this.giamoithang.Visible = false;
+            // 
             // Goi_tap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -463,16 +474,16 @@ namespace Gym_management
 
         private System.Windows.Forms.DataGridView dtggoi;
         private System.Windows.Forms.Label lblMem;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_magoi;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_tengoi;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_giamt;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox4;
@@ -494,5 +505,6 @@ namespace Gym_management
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.DataGridViewTextBoxColumn magoi;
         private System.Windows.Forms.DataGridViewTextBoxColumn tengoi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn giamoithang;
     }
 }
