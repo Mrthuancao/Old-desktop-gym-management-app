@@ -30,26 +30,26 @@
         {
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.dateTimePicker3 = new System.Windows.Forms.DateTimePicker();
+            this.dt_ngsd = new System.Windows.Forms.DateTimePicker();
             this.lblUseDate1 = new System.Windows.Forms.Label();
             this.panel10 = new System.Windows.Forms.Panel();
             this.lblDeviceType1 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_loaitb = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
             this.lblBrand1 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_tenhang = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dt_hanbh = new System.Windows.Forms.DateTimePicker();
             this.lblWarrantyDeadline1 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dt_ngmua = new System.Windows.Forms.DateTimePicker();
             this.lblPurchaseDate1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.lblDeviceCode2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_tentb = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblDeviceName2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_matb = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblDeviceCode1 = new System.Windows.Forms.Label();
@@ -78,6 +78,10 @@
             this.tenltb = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngmua = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngsd = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hanbaotri = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenhang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel4.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel10.SuspendLayout();
@@ -113,7 +117,7 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.dateTimePicker3);
+            this.panel7.Controls.Add(this.dt_ngsd);
             this.panel7.Controls.Add(this.lblUseDate1);
             this.panel7.Location = new System.Drawing.Point(7, 310);
             this.panel7.Name = "panel7";
@@ -121,14 +125,14 @@
             this.panel7.TabIndex = 11;
             this.panel7.TabStop = true;
             // 
-            // dateTimePicker3
+            // dt_ngsd
             // 
-            this.dateTimePicker3.CalendarMonthBackground = System.Drawing.SystemColors.ActiveBorder;
-            this.dateTimePicker3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker3.Location = new System.Drawing.Point(227, 3);
-            this.dateTimePicker3.Name = "dateTimePicker3";
-            this.dateTimePicker3.Size = new System.Drawing.Size(257, 26);
-            this.dateTimePicker3.TabIndex = 0;
+            this.dt_ngsd.CalendarMonthBackground = System.Drawing.SystemColors.ActiveBorder;
+            this.dt_ngsd.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_ngsd.Location = new System.Drawing.Point(227, 3);
+            this.dt_ngsd.Name = "dt_ngsd";
+            this.dt_ngsd.Size = new System.Drawing.Size(257, 26);
+            this.dt_ngsd.TabIndex = 0;
             // 
             // lblUseDate1
             // 
@@ -146,7 +150,7 @@
             // panel10
             // 
             this.panel10.Controls.Add(this.lblDeviceType1);
-            this.panel10.Controls.Add(this.textBox3);
+            this.panel10.Controls.Add(this.tb_loaitb);
             this.panel10.Location = new System.Drawing.Point(7, 230);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(486, 33);
@@ -165,21 +169,21 @@
             this.lblDeviceType1.Text = "Loại thiết bị";
             this.lblDeviceType1.Click += new System.EventHandler(this.label5_Click);
             // 
-            // textBox3
+            // tb_loaitb
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(175, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(309, 27);
-            this.textBox3.TabIndex = 10;
+            this.tb_loaitb.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_loaitb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_loaitb.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_loaitb.Location = new System.Drawing.Point(175, 3);
+            this.tb_loaitb.Name = "tb_loaitb";
+            this.tb_loaitb.ReadOnly = true;
+            this.tb_loaitb.Size = new System.Drawing.Size(309, 27);
+            this.tb_loaitb.TabIndex = 10;
             // 
             // panel11
             // 
             this.panel11.Controls.Add(this.lblBrand1);
-            this.panel11.Controls.Add(this.textBox4);
+            this.panel11.Controls.Add(this.tb_tenhang);
             this.panel11.Location = new System.Drawing.Point(7, 389);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(486, 33);
@@ -198,20 +202,20 @@
             this.lblBrand1.Text = "Hãng cung cấp";
             this.lblBrand1.Click += new System.EventHandler(this.label6_Click);
             // 
-            // textBox4
+            // tb_tenhang
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(175, 4);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(309, 27);
-            this.textBox4.TabIndex = 11;
+            this.tb_tenhang.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_tenhang.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_tenhang.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_tenhang.Location = new System.Drawing.Point(175, 4);
+            this.tb_tenhang.Name = "tb_tenhang";
+            this.tb_tenhang.ReadOnly = true;
+            this.tb_tenhang.Size = new System.Drawing.Size(309, 27);
+            this.tb_tenhang.TabIndex = 11;
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.dateTimePicker2);
+            this.panel9.Controls.Add(this.dt_hanbh);
             this.panel9.Controls.Add(this.lblWarrantyDeadline1);
             this.panel9.Location = new System.Drawing.Point(7, 348);
             this.panel9.Name = "panel9";
@@ -219,14 +223,14 @@
             this.panel9.TabIndex = 0;
             this.panel9.TabStop = true;
             // 
-            // dateTimePicker2
+            // dt_hanbh
             // 
-            this.dateTimePicker2.CalendarMonthBackground = System.Drawing.SystemColors.ActiveBorder;
-            this.dateTimePicker2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(227, 6);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(257, 26);
-            this.dateTimePicker2.TabIndex = 0;
+            this.dt_hanbh.CalendarMonthBackground = System.Drawing.SystemColors.ActiveBorder;
+            this.dt_hanbh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_hanbh.Location = new System.Drawing.Point(227, 6);
+            this.dt_hanbh.Name = "dt_hanbh";
+            this.dt_hanbh.Size = new System.Drawing.Size(257, 26);
+            this.dt_hanbh.TabIndex = 0;
             // 
             // lblWarrantyDeadline1
             // 
@@ -243,7 +247,7 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.dateTimePicker1);
+            this.panel8.Controls.Add(this.dt_ngmua);
             this.panel8.Controls.Add(this.lblPurchaseDate1);
             this.panel8.Location = new System.Drawing.Point(7, 270);
             this.panel8.Name = "panel8";
@@ -251,14 +255,14 @@
             this.panel8.TabIndex = 0;
             this.panel8.TabStop = true;
             // 
-            // dateTimePicker1
+            // dt_ngmua
             // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.ActiveBorder;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(227, 6);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(257, 26);
-            this.dateTimePicker1.TabIndex = 0;
+            this.dt_ngmua.CalendarMonthBackground = System.Drawing.SystemColors.ActiveBorder;
+            this.dt_ngmua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_ngmua.Location = new System.Drawing.Point(227, 6);
+            this.dt_ngmua.Name = "dt_ngmua";
+            this.dt_ngmua.Size = new System.Drawing.Size(257, 26);
+            this.dt_ngmua.TabIndex = 0;
             // 
             // lblPurchaseDate1
             // 
@@ -275,7 +279,7 @@
             // panel6
             // 
             this.panel6.Controls.Add(this.lblDeviceCode2);
-            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.tb_tentb);
             this.panel6.Location = new System.Drawing.Point(7, 190);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(486, 33);
@@ -293,21 +297,21 @@
             this.lblDeviceCode2.TabIndex = 10;
             this.lblDeviceCode2.Text = "Tên thiết bị";
             // 
-            // textBox1
+            // tb_tentb
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(175, 4);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(309, 27);
-            this.textBox1.TabIndex = 9;
+            this.tb_tentb.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_tentb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_tentb.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_tentb.Location = new System.Drawing.Point(175, 4);
+            this.tb_tentb.Name = "tb_tentb";
+            this.tb_tentb.ReadOnly = true;
+            this.tb_tentb.Size = new System.Drawing.Size(309, 27);
+            this.tb_tentb.TabIndex = 9;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.lblDeviceName2);
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.tb_matb);
             this.panel5.Location = new System.Drawing.Point(7, 151);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(486, 33);
@@ -326,16 +330,16 @@
             this.lblDeviceName2.Text = "Mã thiết bị";
             this.lblDeviceName2.Click += new System.EventHandler(this.lblMem_Click);
             // 
-            // textBox2
+            // tb_matb
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(175, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(309, 27);
-            this.textBox2.TabIndex = 8;
+            this.tb_matb.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_matb.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_matb.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_matb.Location = new System.Drawing.Point(175, 3);
+            this.tb_matb.Name = "tb_matb";
+            this.tb_matb.ReadOnly = true;
+            this.tb_matb.Size = new System.Drawing.Size(309, 27);
+            this.tb_matb.TabIndex = 8;
             // 
             // pictureBox1
             // 
@@ -447,7 +451,11 @@
             this.tenthietbi,
             this.tenltb,
             this.soluong,
-            this.gia});
+            this.gia,
+            this.ngmua,
+            this.ngsd,
+            this.hanbaotri,
+            this.tenhang});
             this.dtgtb.Location = new System.Drawing.Point(5, 53);
             this.dtgtb.Margin = new System.Windows.Forms.Padding(2);
             this.dtgtb.Name = "dtgtb";
@@ -455,6 +463,7 @@
             this.dtgtb.RowTemplate.Height = 24;
             this.dtgtb.Size = new System.Drawing.Size(390, 416);
             this.dtgtb.TabIndex = 6;
+            this.dtgtb.Click += new System.EventHandler(this.dtgtb_Click);
             // 
             // btnView1
             // 
@@ -645,6 +654,38 @@
             this.gia.ReadOnly = true;
             this.gia.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
+            // ngmua
+            // 
+            this.ngmua.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ngmua.DataPropertyName = "Ngày mua";
+            this.ngmua.HeaderText = "Ngày mua";
+            this.ngmua.Name = "ngmua";
+            this.ngmua.Visible = false;
+            // 
+            // ngsd
+            // 
+            this.ngsd.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ngsd.DataPropertyName = "Ngày sử dụng";
+            this.ngsd.HeaderText = "Ngày sử dụng";
+            this.ngsd.Name = "ngsd";
+            this.ngsd.Visible = false;
+            // 
+            // hanbaotri
+            // 
+            this.hanbaotri.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.hanbaotri.DataPropertyName = "Hạn bảo trì";
+            this.hanbaotri.HeaderText = "Hạn bảo trì";
+            this.hanbaotri.Name = "hanbaotri";
+            this.hanbaotri.Visible = false;
+            // 
+            // tenhang
+            // 
+            this.tenhang.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tenhang.DataPropertyName = "Tên hãng";
+            this.tenhang.HeaderText = "Tên hãng";
+            this.tenhang.Name = "tenhang";
+            this.tenhang.Visible = false;
+            // 
             // Thiet_bi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -688,22 +729,22 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label lblBrand1;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_tenhang;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label lblDeviceType1;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_loaitb;
         private System.Windows.Forms.Panel panel9;
-        public System.Windows.Forms.DateTimePicker dateTimePicker2;
+        public System.Windows.Forms.DateTimePicker dt_hanbh;
         private System.Windows.Forms.Label lblWarrantyDeadline1;
         private System.Windows.Forms.Panel panel8;
-        public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        public System.Windows.Forms.DateTimePicker dt_ngmua;
         private System.Windows.Forms.Label lblPurchaseDate1;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label lblDeviceCode2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_tentb;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lblDeviceName2;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_matb;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label lblDeviceCode1;
@@ -712,7 +753,7 @@
         private System.Windows.Forms.TextBox txtSearch;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Panel panel7;
-        public System.Windows.Forms.DateTimePicker dateTimePicker3;
+        public System.Windows.Forms.DateTimePicker dt_ngsd;
         private System.Windows.Forms.Label lblUseDate1;
         private System.Windows.Forms.TabControl tclEquipments;
         private System.Windows.Forms.TabPage tabPage1;
@@ -735,5 +776,9 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn tenltb;
         private System.Windows.Forms.DataGridViewTextBoxColumn soluong;
         private System.Windows.Forms.DataGridViewTextBoxColumn gia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngmua;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngsd;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hanbaotri;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenhang;
     }
 }
