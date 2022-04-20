@@ -35,11 +35,6 @@ namespace Gym_management
 
         }
 
-        private void panel2_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
         private void label5_Click(object sender, EventArgs e)
         {
 
@@ -91,7 +86,7 @@ namespace Gym_management
         }
         void loadbaotri()
         {
-            string query = "SELECT matb as [Mã thiết bị], ngaybaotri as [Ngày bảo trì], chiphi as [Chi phí] from dbo.BAOTRI";
+            string query = "SELECT BAOTRI.matb as [Mã thiết bị], ngaybaotri as [Ngày bảo trì], chiphi as [Chi phí], tenthietbi as [Tên thiết bị], tenltb as [Tên loại thiết bị], ngmua as [Ngày mua], ngsd as [Ngày sử dụng], hanbaotri as [Hạn bảo trì], tenhang as [Tên hãng] from THIETBI, LOAITHIETBI, BAOTRI, HANG where THIETBI.maltb= LOAITHIETBI.maltb and Hang.mahang=THIETBI.mahang and BAOTRI.matb=THIETBI.matb";
             dtgbaotri.DataSource = DataProvider.Instance.ExecuteQuery(query);
 
         }
@@ -107,6 +102,18 @@ namespace Gym_management
             dt_ngsd.Text = dtgtb.Rows[index].Cells[6].Value.ToString();
             dt_hanbh.Text = dtgtb.Rows[index].Cells[7].Value.ToString();
             tb_tenhang.Text = dtgtb.Rows[index].Cells[8].Value.ToString();
+        }
+
+        private void dtgbaotri_Click(object sender, EventArgs e)
+        {
+            index = dtgbaotri.CurrentRow.Index;
+            tb_matb.Text = dtgbaotri.Rows[index].Cells[0].Value.ToString();
+            tb_tentb.Text = dtgbaotri.Rows[index].Cells[3].Value.ToString();
+            tb_loaitb.Text = dtgbaotri.Rows[index].Cells[4].Value.ToString();
+            dt_ngmua.Text = dtgbaotri.Rows[index].Cells[5].Value.ToString();
+            dt_ngsd.Text = dtgbaotri.Rows[index].Cells[6].Value.ToString();
+            dt_hanbh.Text = dtgbaotri.Rows[index].Cells[7].Value.ToString();
+            tb_tenhang.Text = dtgbaotri.Rows[index].Cells[8].Value.ToString();
         }
     }
 }
