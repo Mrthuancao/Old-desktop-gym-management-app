@@ -20,7 +20,7 @@ namespace Gym_management
         }
         void LoadGoi()
         { 
-            string query = "SELECT magoi as [Mã gói], tengoi as [Tên gói], giamoithang as [Giá] from dbo.GOITAP";
+            string query = "SELECT magoi as [Mã gói], tengoi as [Tên gói], giamoithang as [Giá], coPT as [Có PT] from dbo.GOITAP";
             dtggoi.DataSource = DataProvider.Instance.ExecuteQuery(query);
         }
         int index;
@@ -30,6 +30,7 @@ namespace Gym_management
             tb_magoi.Text = dtggoi.Rows[index].Cells[0].Value.ToString();
             tb_tengoi.Text = dtggoi.Rows[index].Cells[1].Value.ToString();
             tb_giamt.Text = dtggoi.Rows[index].Cells[2].Value.ToString();
+            tb_coPT.Text = dtggoi.Rows[index].Cells[3].Value.ToString();
 
         }
     }
