@@ -36,19 +36,19 @@ namespace Gym_management
             this.btnDelAcc = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tb_sdt = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_email = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_pass = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_user = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblMem = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_tenNv = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lbName = new System.Windows.Forms.Label();
             this.txtSearch = new System.Windows.Forms.TextBox();
@@ -58,6 +58,10 @@ namespace Gym_management
             this.matk = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.username = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.manv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pass = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.email = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.luong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tbpListAcc.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -136,7 +140,7 @@ namespace Gym_management
             // panel8
             // 
             this.panel8.Controls.Add(this.label4);
-            this.panel8.Controls.Add(this.textBox5);
+            this.panel8.Controls.Add(this.tb_sdt);
             this.panel8.Location = new System.Drawing.Point(17, 166);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(388, 33);
@@ -154,21 +158,21 @@ namespace Gym_management
             this.label4.TabIndex = 10;
             this.label4.Text = "SDT";
             // 
-            // textBox5
+            // tb_sdt
             // 
-            this.textBox5.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox5.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(110, 3);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(274, 27);
-            this.textBox5.TabIndex = 7;
+            this.tb_sdt.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_sdt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_sdt.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_sdt.Location = new System.Drawing.Point(110, 3);
+            this.tb_sdt.Name = "tb_sdt";
+            this.tb_sdt.ReadOnly = true;
+            this.tb_sdt.Size = new System.Drawing.Size(274, 27);
+            this.tb_sdt.TabIndex = 7;
             // 
             // panel7
             // 
             this.panel7.Controls.Add(this.label3);
-            this.panel7.Controls.Add(this.textBox4);
+            this.panel7.Controls.Add(this.tb_email);
             this.panel7.Location = new System.Drawing.Point(17, 127);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(388, 33);
@@ -186,21 +190,21 @@ namespace Gym_management
             this.label3.TabIndex = 10;
             this.label3.Text = "Email";
             // 
-            // textBox4
+            // tb_email
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(110, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(274, 27);
-            this.textBox4.TabIndex = 6;
+            this.tb_email.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_email.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_email.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_email.Location = new System.Drawing.Point(110, 3);
+            this.tb_email.Name = "tb_email";
+            this.tb_email.ReadOnly = true;
+            this.tb_email.Size = new System.Drawing.Size(274, 27);
+            this.tb_email.TabIndex = 6;
             // 
             // panel6
             // 
             this.panel6.Controls.Add(this.label2);
-            this.panel6.Controls.Add(this.textBox3);
+            this.panel6.Controls.Add(this.tb_pass);
             this.panel6.Location = new System.Drawing.Point(17, 88);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(388, 33);
@@ -218,21 +222,21 @@ namespace Gym_management
             this.label2.TabIndex = 10;
             this.label2.Text = "Mật khẩu";
             // 
-            // textBox3
+            // tb_pass
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(110, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(274, 27);
-            this.textBox3.TabIndex = 5;
+            this.tb_pass.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_pass.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_pass.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_pass.Location = new System.Drawing.Point(110, 3);
+            this.tb_pass.Name = "tb_pass";
+            this.tb_pass.ReadOnly = true;
+            this.tb_pass.Size = new System.Drawing.Size(274, 27);
+            this.tb_pass.TabIndex = 5;
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.tb_user);
             this.panel4.Location = new System.Drawing.Point(17, 49);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(388, 33);
@@ -250,21 +254,21 @@ namespace Gym_management
             this.label1.TabIndex = 10;
             this.label1.Text = "User Name";
             // 
-            // textBox1
+            // tb_user
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(110, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(274, 27);
-            this.textBox1.TabIndex = 4;
+            this.tb_user.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_user.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_user.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_user.Location = new System.Drawing.Point(110, 3);
+            this.tb_user.Name = "tb_user";
+            this.tb_user.ReadOnly = true;
+            this.tb_user.Size = new System.Drawing.Size(274, 27);
+            this.tb_user.TabIndex = 4;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.lblMem);
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.tb_tenNv);
             this.panel5.Location = new System.Drawing.Point(17, 10);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(388, 33);
@@ -282,16 +286,16 @@ namespace Gym_management
             this.lblMem.TabIndex = 10;
             this.lblMem.Text = "Tên Nv";
             // 
-            // textBox2
+            // tb_tenNv
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(110, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(274, 27);
-            this.textBox2.TabIndex = 3;
+            this.tb_tenNv.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_tenNv.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_tenNv.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_tenNv.Location = new System.Drawing.Point(110, 3);
+            this.tb_tenNv.Name = "tb_tenNv";
+            this.tb_tenNv.ReadOnly = true;
+            this.tb_tenNv.Size = new System.Drawing.Size(274, 27);
+            this.tb_tenNv.TabIndex = 3;
             // 
             // panel2
             // 
@@ -348,11 +352,16 @@ namespace Gym_management
             this.dtgAccList.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.matk,
             this.username,
-            this.manv});
+            this.manv,
+            this.hoten,
+            this.pass,
+            this.email,
+            this.luong});
             this.dtgAccList.Location = new System.Drawing.Point(2, 3);
             this.dtgAccList.Name = "dtgAccList";
             this.dtgAccList.Size = new System.Drawing.Size(459, 451);
             this.dtgAccList.TabIndex = 0;
+            this.dtgAccList.Click += new System.EventHandler(this.dtgAccList_Click);
             // 
             // matk
             // 
@@ -375,11 +384,43 @@ namespace Gym_management
             // manv
             // 
             this.manv.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.manv.DataPropertyName = "Mã nhân viên QL";
-            this.manv.HeaderText = "Mã nhân viên QL";
+            this.manv.DataPropertyName = "Mã nhân viên";
+            this.manv.HeaderText = "Mã nhân viên";
             this.manv.Name = "manv";
             this.manv.ReadOnly = true;
             this.manv.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // hoten
+            // 
+            this.hoten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.hoten.DataPropertyName = "Tên nhân viên";
+            this.hoten.HeaderText = "Tên nhân viên";
+            this.hoten.Name = "hoten";
+            this.hoten.Visible = false;
+            // 
+            // pass
+            // 
+            this.pass.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.pass.DataPropertyName = "Mật khẩu";
+            this.pass.HeaderText = "Mật khẩu";
+            this.pass.Name = "pass";
+            this.pass.Visible = false;
+            // 
+            // email
+            // 
+            this.email.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.email.DataPropertyName = "Email";
+            this.email.HeaderText = "Email";
+            this.email.Name = "email";
+            this.email.Visible = false;
+            // 
+            // luong
+            // 
+            this.luong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.luong.DataPropertyName = "Số điện thoại";
+            this.luong.HeaderText = "Số điện thoại";
+            this.luong.Name = "luong";
+            this.luong.Visible = false;
             // 
             // Cap_TK
             // 
@@ -424,23 +465,27 @@ namespace Gym_management
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tb_sdt;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_email;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_pass;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tb_user;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lblMem;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_tenNv;
         private System.Windows.Forms.Button btnDelAcc;
         private System.Windows.Forms.Button btt_ctk;
         private System.Windows.Forms.DataGridViewTextBoxColumn matk;
         private System.Windows.Forms.DataGridViewTextBoxColumn username;
         private System.Windows.Forms.DataGridViewTextBoxColumn manv;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hoten;
+        private System.Windows.Forms.DataGridViewTextBoxColumn pass;
+        private System.Windows.Forms.DataGridViewTextBoxColumn email;
+        private System.Windows.Forms.DataGridViewTextBoxColumn luong;
     }
 }

@@ -43,39 +43,41 @@ namespace Gym_management
             this.panel3 = new System.Windows.Forms.Panel();
             this.dtgCus = new System.Windows.Forms.DataGridView();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.label8 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
+            this.tb_tengt = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel11 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tb_maPT = new System.Windows.Forms.TextBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tb_sdt = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.dt_ngdk = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dt_ngsinh = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.tb_gioitinh = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tb_hoten = new System.Windows.Forms.TextBox();
             this.panel5 = new System.Windows.Forms.Panel();
             this.lblMem = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.tb_maHV = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.mahv = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoten = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phai = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngsinh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngdk = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sdt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tengoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nvquanli = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -228,12 +230,17 @@ namespace Gym_management
             this.dtgCus.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.mahv,
             this.hoten,
+            this.phai,
+            this.ngsinh,
+            this.ngdk,
             this.sdt,
-            this.phai});
+            this.tengoi,
+            this.nvquanli});
             this.dtgCus.Location = new System.Drawing.Point(3, 0);
             this.dtgCus.Name = "dtgCus";
             this.dtgCus.Size = new System.Drawing.Size(504, 435);
             this.dtgCus.TabIndex = 0;
+            this.dtgCus.Click += new System.EventHandler(this.dtgCus_Click);
             // 
             // panel4
             // 
@@ -254,10 +261,20 @@ namespace Gym_management
             this.panel4.Size = new System.Drawing.Size(394, 435);
             this.panel4.TabIndex = 2;
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Black;
+            this.label8.Location = new System.Drawing.Point(5, 5);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(188, 26);
+            this.label8.TabIndex = 16;
+            this.label8.Text = "Thông tin chi tiết";
+            // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.checkBox3);
-            this.panel12.Controls.Add(this.checkBox4);
+            this.panel12.Controls.Add(this.tb_tengt);
             this.panel12.Controls.Add(this.label7);
             this.panel12.Location = new System.Drawing.Point(3, 347);
             this.panel12.Name = "panel12";
@@ -265,29 +282,16 @@ namespace Gym_management
             this.panel12.TabIndex = 0;
             this.panel12.TabStop = true;
             // 
-            // checkBox3
+            // tb_tengt
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.Color.Black;
-            this.checkBox3.Location = new System.Drawing.Point(219, 5);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(90, 25);
-            this.checkBox3.TabIndex = 0;
-            this.checkBox3.Text = "1 Tháng";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.Color.Black;
-            this.checkBox4.Location = new System.Drawing.Point(131, 5);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(82, 25);
-            this.checkBox4.TabIndex = 0;
-            this.checkBox4.Text = "1 Ngày";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.tb_tengt.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_tengt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_tengt.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_tengt.Location = new System.Drawing.Point(146, 2);
+            this.tb_tengt.Name = "tb_tengt";
+            this.tb_tengt.ReadOnly = true;
+            this.tb_tengt.Size = new System.Drawing.Size(237, 27);
+            this.tb_tengt.TabIndex = 12;
             // 
             // label7
             // 
@@ -297,9 +301,9 @@ namespace Gym_management
             this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label7.Location = new System.Drawing.Point(3, 7);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(108, 22);
+            this.label7.Size = new System.Drawing.Size(103, 22);
             this.label7.TabIndex = 10;
-            this.label7.Text = "Loại gói tập";
+            this.label7.Text = "Tên gói tập";
             // 
             // button1
             // 
@@ -315,7 +319,7 @@ namespace Gym_management
             // panel11
             // 
             this.panel11.Controls.Add(this.label6);
-            this.panel11.Controls.Add(this.textBox4);
+            this.panel11.Controls.Add(this.tb_maPT);
             this.panel11.Location = new System.Drawing.Point(3, 311);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(388, 33);
@@ -333,21 +337,21 @@ namespace Gym_management
             this.label6.TabIndex = 10;
             this.label6.Text = "Mã PT (nếu có)";
             // 
-            // textBox4
+            // tb_maPT
             // 
-            this.textBox4.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox4.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(147, 3);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(237, 27);
-            this.textBox4.TabIndex = 11;
+            this.tb_maPT.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_maPT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_maPT.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_maPT.Location = new System.Drawing.Point(147, 3);
+            this.tb_maPT.Name = "tb_maPT";
+            this.tb_maPT.ReadOnly = true;
+            this.tb_maPT.Size = new System.Drawing.Size(237, 27);
+            this.tb_maPT.TabIndex = 11;
             // 
             // panel10
             // 
             this.panel10.Controls.Add(this.label5);
-            this.panel10.Controls.Add(this.textBox3);
+            this.panel10.Controls.Add(this.tb_sdt);
             this.panel10.Location = new System.Drawing.Point(3, 275);
             this.panel10.Name = "panel10";
             this.panel10.Size = new System.Drawing.Size(388, 33);
@@ -365,20 +369,20 @@ namespace Gym_management
             this.label5.TabIndex = 10;
             this.label5.Text = "SDT";
             // 
-            // textBox3
+            // tb_sdt
             // 
-            this.textBox3.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox3.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(75, 3);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(309, 27);
-            this.textBox3.TabIndex = 10;
+            this.tb_sdt.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_sdt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_sdt.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_sdt.Location = new System.Drawing.Point(75, 3);
+            this.tb_sdt.Name = "tb_sdt";
+            this.tb_sdt.ReadOnly = true;
+            this.tb_sdt.Size = new System.Drawing.Size(309, 27);
+            this.tb_sdt.TabIndex = 10;
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.dateTimePicker2);
+            this.panel9.Controls.Add(this.dt_ngdk);
             this.panel9.Controls.Add(this.label4);
             this.panel9.Location = new System.Drawing.Point(3, 240);
             this.panel9.Name = "panel9";
@@ -386,14 +390,14 @@ namespace Gym_management
             this.panel9.TabIndex = 0;
             this.panel9.TabStop = true;
             // 
-            // dateTimePicker2
+            // dt_ngdk
             // 
-            this.dateTimePicker2.CalendarMonthBackground = System.Drawing.SystemColors.ActiveBorder;
-            this.dateTimePicker2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(100, 3);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(257, 26);
-            this.dateTimePicker2.TabIndex = 0;
+            this.dt_ngdk.CalendarMonthBackground = System.Drawing.SystemColors.ActiveBorder;
+            this.dt_ngdk.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_ngdk.Location = new System.Drawing.Point(100, 3);
+            this.dt_ngdk.Name = "dt_ngdk";
+            this.dt_ngdk.Size = new System.Drawing.Size(257, 26);
+            this.dt_ngdk.TabIndex = 0;
             // 
             // label4
             // 
@@ -409,7 +413,7 @@ namespace Gym_management
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.dateTimePicker1);
+            this.panel8.Controls.Add(this.dt_ngsinh);
             this.panel8.Controls.Add(this.label3);
             this.panel8.Location = new System.Drawing.Point(3, 205);
             this.panel8.Name = "panel8";
@@ -417,14 +421,14 @@ namespace Gym_management
             this.panel8.TabIndex = 0;
             this.panel8.TabStop = true;
             // 
-            // dateTimePicker1
+            // dt_ngsinh
             // 
-            this.dateTimePicker1.CalendarMonthBackground = System.Drawing.SystemColors.ActiveBorder;
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(100, 3);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(257, 26);
-            this.dateTimePicker1.TabIndex = 0;
+            this.dt_ngsinh.CalendarMonthBackground = System.Drawing.SystemColors.ActiveBorder;
+            this.dt_ngsinh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_ngsinh.Location = new System.Drawing.Point(100, 3);
+            this.dt_ngsinh.Name = "dt_ngsinh";
+            this.dt_ngsinh.Size = new System.Drawing.Size(257, 26);
+            this.dt_ngsinh.TabIndex = 0;
             // 
             // label3
             // 
@@ -440,37 +444,23 @@ namespace Gym_management
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.checkBox2);
-            this.panel7.Controls.Add(this.checkBox1);
+            this.panel7.Controls.Add(this.tb_gioitinh);
             this.panel7.Controls.Add(this.label2);
             this.panel7.Location = new System.Drawing.Point(3, 166);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(388, 33);
             this.panel7.TabIndex = 12;
             // 
-            // checkBox2
+            // tb_gioitinh
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.ForeColor = System.Drawing.Color.Black;
-            this.checkBox2.Location = new System.Drawing.Point(173, 5);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(52, 25);
-            this.checkBox2.TabIndex = 0;
-            this.checkBox2.Text = "Nữ";
-            this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox1.ForeColor = System.Drawing.Color.Black;
-            this.checkBox1.Location = new System.Drawing.Point(102, 5);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(64, 25);
-            this.checkBox1.TabIndex = 0;
-            this.checkBox1.Text = "Nam";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.tb_gioitinh.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_gioitinh.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_gioitinh.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_gioitinh.Location = new System.Drawing.Point(89, 3);
+            this.tb_gioitinh.Name = "tb_gioitinh";
+            this.tb_gioitinh.ReadOnly = true;
+            this.tb_gioitinh.Size = new System.Drawing.Size(295, 27);
+            this.tb_gioitinh.TabIndex = 11;
             // 
             // label2
             // 
@@ -487,7 +477,7 @@ namespace Gym_management
             // panel6
             // 
             this.panel6.Controls.Add(this.label1);
-            this.panel6.Controls.Add(this.textBox1);
+            this.panel6.Controls.Add(this.tb_hoten);
             this.panel6.Location = new System.Drawing.Point(3, 127);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(388, 33);
@@ -505,21 +495,21 @@ namespace Gym_management
             this.label1.TabIndex = 10;
             this.label1.Text = "Họ Tên";
             // 
-            // textBox1
+            // tb_hoten
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox1.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(75, 3);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(309, 27);
-            this.textBox1.TabIndex = 9;
+            this.tb_hoten.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_hoten.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_hoten.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_hoten.Location = new System.Drawing.Point(75, 3);
+            this.tb_hoten.Name = "tb_hoten";
+            this.tb_hoten.ReadOnly = true;
+            this.tb_hoten.Size = new System.Drawing.Size(309, 27);
+            this.tb_hoten.TabIndex = 9;
             // 
             // panel5
             // 
             this.panel5.Controls.Add(this.lblMem);
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.tb_maHV);
             this.panel5.Location = new System.Drawing.Point(3, 88);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(388, 33);
@@ -537,16 +527,16 @@ namespace Gym_management
             this.lblMem.TabIndex = 10;
             this.lblMem.Text = "Mã HV";
             // 
-            // textBox2
+            // tb_maHV
             // 
-            this.textBox2.BackColor = System.Drawing.SystemColors.ActiveBorder;
-            this.textBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.textBox2.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(75, 3);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(309, 27);
-            this.textBox2.TabIndex = 8;
+            this.tb_maHV.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_maHV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_maHV.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_maHV.Location = new System.Drawing.Point(75, 3);
+            this.tb_maHV.Name = "tb_maHV";
+            this.tb_maHV.ReadOnly = true;
+            this.tb_maHV.Size = new System.Drawing.Size(309, 27);
+            this.tb_maHV.TabIndex = 8;
             // 
             // pictureBox1
             // 
@@ -557,17 +547,6 @@ namespace Gym_management
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(5, 5);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(188, 26);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Thông tin chi tiết";
             // 
             // mahv
             // 
@@ -587,6 +566,31 @@ namespace Gym_management
             this.hoten.ReadOnly = true;
             this.hoten.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
+            // phai
+            // 
+            this.phai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.phai.DataPropertyName = "Giới tính";
+            this.phai.HeaderText = "Giới tính";
+            this.phai.Name = "phai";
+            this.phai.ReadOnly = true;
+            this.phai.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            // 
+            // ngsinh
+            // 
+            this.ngsinh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ngsinh.DataPropertyName = "Ngày sinh";
+            this.ngsinh.HeaderText = "Ngày sinh";
+            this.ngsinh.Name = "ngsinh";
+            this.ngsinh.Visible = false;
+            // 
+            // ngdk
+            // 
+            this.ngdk.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ngdk.DataPropertyName = "Ngày đăng kí";
+            this.ngdk.HeaderText = "Ngày đăng kí";
+            this.ngdk.Name = "ngdk";
+            this.ngdk.Visible = false;
+            // 
             // sdt
             // 
             this.sdt.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
@@ -596,14 +600,21 @@ namespace Gym_management
             this.sdt.ReadOnly = true;
             this.sdt.Resizable = System.Windows.Forms.DataGridViewTriState.False;
             // 
-            // phai
+            // tengoi
             // 
-            this.phai.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.phai.DataPropertyName = "Giới tính";
-            this.phai.HeaderText = "Giới tính";
-            this.phai.Name = "phai";
-            this.phai.ReadOnly = true;
-            this.phai.Resizable = System.Windows.Forms.DataGridViewTriState.False;
+            this.tengoi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tengoi.DataPropertyName = "Tên gói";
+            this.tengoi.HeaderText = "Tên gói";
+            this.tengoi.Name = "tengoi";
+            this.tengoi.Visible = false;
+            // 
+            // nvquanli
+            // 
+            this.nvquanli.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.nvquanli.DataPropertyName = "Nhân viên quản lý";
+            this.nvquanli.HeaderText = "Nhân viên quản lý";
+            this.nvquanli.Name = "nvquanli";
+            this.nvquanli.Visible = false;
             // 
             // Khach_hang
             // 
@@ -665,35 +676,37 @@ namespace Gym_management
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label lblMem;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox tb_maHV;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.CheckBox checkBox2;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
-        public System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox tb_hoten;
+        public System.Windows.Forms.DateTimePicker dt_ngsinh;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tb_maPT;
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tb_sdt;
         private System.Windows.Forms.Panel panel9;
-        public System.Windows.Forms.DateTimePicker dateTimePicker2;
+        public System.Windows.Forms.DateTimePicker dt_ngdk;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox tb_tengt;
+        private System.Windows.Forms.TextBox tb_gioitinh;
         private System.Windows.Forms.DataGridViewTextBoxColumn mahv;
         private System.Windows.Forms.DataGridViewTextBoxColumn hoten;
-        private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
         private System.Windows.Forms.DataGridViewTextBoxColumn phai;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngsinh;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngdk;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sdt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tengoi;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nvquanli;
     }
 }
