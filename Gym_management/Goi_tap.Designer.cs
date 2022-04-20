@@ -36,14 +36,9 @@ namespace Gym_management
             this.label1 = new System.Windows.Forms.Label();
             this.tb_tengoi = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.panel8 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.tb_giamt = new System.Windows.Forms.TextBox();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
             this.button5 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.panel12 = new System.Windows.Forms.Panel();
@@ -60,13 +55,14 @@ namespace Gym_management
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.tb_coPT = new System.Windows.Forms.TextBox();
             this.magoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tengoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.giamoithang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.coPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dtggoi)).BeginInit();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
-            this.panel8.SuspendLayout();
             this.panel11.SuspendLayout();
             this.panel12.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -81,7 +77,8 @@ namespace Gym_management
             this.dtggoi.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.magoi,
             this.tengoi,
-            this.giamoithang});
+            this.giamoithang,
+            this.coPT});
             this.dtggoi.Location = new System.Drawing.Point(4, 58);
             this.dtggoi.Name = "dtggoi";
             this.dtggoi.Size = new System.Drawing.Size(513, 435);
@@ -152,36 +149,6 @@ namespace Gym_management
             this.panel6.Size = new System.Drawing.Size(388, 33);
             this.panel6.TabIndex = 11;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(147, 8);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(237, 25);
-            this.textBox3.TabIndex = 11;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(3, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(129, 22);
-            this.label4.TabIndex = 10;
-            this.label4.Text = "Ngày kết thúc ";
-            // 
-            // panel8
-            // 
-            this.panel8.Controls.Add(this.textBox3);
-            this.panel8.Controls.Add(this.label4);
-            this.panel8.Location = new System.Drawing.Point(3, 159);
-            this.panel8.Name = "panel8";
-            this.panel8.Size = new System.Drawing.Size(388, 40);
-            this.panel8.TabIndex = 0;
-            this.panel8.TabStop = true;
-            // 
             // label6
             // 
             this.label6.AutoSize = true;
@@ -209,34 +176,10 @@ namespace Gym_management
             // 
             this.panel11.Controls.Add(this.label6);
             this.panel11.Controls.Add(this.tb_giamt);
-            this.panel11.Location = new System.Drawing.Point(3, 205);
+            this.panel11.Location = new System.Drawing.Point(3, 163);
             this.panel11.Name = "panel11";
             this.panel11.Size = new System.Drawing.Size(388, 33);
             this.panel11.TabIndex = 15;
-            // 
-            // checkBox3
-            // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.ForeColor = System.Drawing.Color.Black;
-            this.checkBox3.Location = new System.Drawing.Point(219, 5);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(79, 25);
-            this.checkBox3.TabIndex = 0;
-            this.checkBox3.Text = "Không";
-            this.checkBox3.UseVisualStyleBackColor = true;
-            // 
-            // checkBox4
-            // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.ForeColor = System.Drawing.Color.Black;
-            this.checkBox4.Location = new System.Drawing.Point(131, 5);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(52, 25);
-            this.checkBox4.TabIndex = 0;
-            this.checkBox4.Text = "Có";
-            this.checkBox4.UseVisualStyleBackColor = true;
             // 
             // button5
             // 
@@ -263,10 +206,9 @@ namespace Gym_management
             // 
             // panel12
             // 
-            this.panel12.Controls.Add(this.checkBox3);
-            this.panel12.Controls.Add(this.checkBox4);
+            this.panel12.Controls.Add(this.tb_coPT);
             this.panel12.Controls.Add(this.label7);
-            this.panel12.Location = new System.Drawing.Point(1, 244);
+            this.panel12.Location = new System.Drawing.Point(1, 199);
             this.panel12.Name = "panel12";
             this.panel12.Size = new System.Drawing.Size(388, 33);
             this.panel12.TabIndex = 0;
@@ -403,7 +345,6 @@ namespace Gym_management
             this.panel4.Controls.Add(this.panel12);
             this.panel4.Controls.Add(this.button5);
             this.panel4.Controls.Add(this.panel11);
-            this.panel4.Controls.Add(this.panel8);
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Controls.Add(this.pictureBox1);
@@ -411,6 +352,17 @@ namespace Gym_management
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(394, 435);
             this.panel4.TabIndex = 7;
+            // 
+            // tb_coPT
+            // 
+            this.tb_coPT.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.tb_coPT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.tb_coPT.Font = new System.Drawing.Font("Times New Roman", 12.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tb_coPT.Location = new System.Drawing.Point(84, 2);
+            this.tb_coPT.Name = "tb_coPT";
+            this.tb_coPT.ReadOnly = true;
+            this.tb_coPT.Size = new System.Drawing.Size(302, 27);
+            this.tb_coPT.TabIndex = 16;
             // 
             // magoi
             // 
@@ -438,6 +390,14 @@ namespace Gym_management
             this.giamoithang.Name = "giamoithang";
             this.giamoithang.Visible = false;
             // 
+            // coPT
+            // 
+            this.coPT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.coPT.DataPropertyName = "Có PT";
+            this.coPT.HeaderText = "Có PT";
+            this.coPT.Name = "coPT";
+            this.coPT.Visible = false;
+            // 
             // Goi_tap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -455,8 +415,6 @@ namespace Gym_management
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel8.ResumeLayout(false);
-            this.panel8.PerformLayout();
             this.panel11.ResumeLayout(false);
             this.panel11.PerformLayout();
             this.panel12.ResumeLayout(false);
@@ -479,14 +437,9 @@ namespace Gym_management
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tb_tengoi;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tb_giamt;
         private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel12;
@@ -503,8 +456,10 @@ namespace Gym_management
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.TextBox tb_coPT;
         private System.Windows.Forms.DataGridViewTextBoxColumn magoi;
         private System.Windows.Forms.DataGridViewTextBoxColumn tengoi;
         private System.Windows.Forms.DataGridViewTextBoxColumn giamoithang;
+        private System.Windows.Forms.DataGridViewTextBoxColumn coPT;
     }
 }
